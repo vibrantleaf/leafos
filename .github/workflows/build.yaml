@@ -10,7 +10,7 @@ on:
       - "**.txt"
       - "**.gitignore"
       - ".gitlab/*"
-      - ".devcontainer/*
+      - ".devcontainer/*"
   pull_request:
   workflow_dispatch:
 concurrency:
