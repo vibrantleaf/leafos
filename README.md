@@ -15,7 +15,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso`s a `.iso` installer cannot be provided.
 
-Inorder to install this os you will need to rebase from a already installed [Universal Blue](https://universal-blue.org/) Image Such as [Aurrora](https://getaurora.dev/en/), [Bazzite](https://bazzite.gg/) or [Bluefin](https://projectbluefin.io/) Then follow the [rebase helper]() and run the supplyed commands in the terminal from with in your Universal Blue Image Installation. after the commands hsve finnished next time you reboot your installation will switch over as if it was a just a normal over-the-air update.
+Inorder to install this os you will need to rebase from a already installed [Universal Blue](https://universal-blue.org/) Image Such as [Aurrora](https://getaurora.dev/en/), [Bazzite](https://bazzite.gg/) or [Bluefin](https://projectbluefin.io/) Then follow the [rebase helper](https://github.com/vibrantleaf/os/blob/main/README.md#rebase-helper) and run the supplyed commands in the terminal from with in your Universal Blue Image Installation. after the commands hsve finnished next time you reboot your installation will switch over as if it was a just a normal over-the-air update.
 
 > WARNING: Do not use a CentOS Stream based image such as Bluefin LTS as rebassing between Fedora Attomic and CentOS Stream is unsupported.
 ### Rebase Helper.
