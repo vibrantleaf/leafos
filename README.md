@@ -88,4 +88,4 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
 </details>
 
 ## Thanks.
-Thanks, to The [Unversial Blue](https://universal-blue.org/) Team and The [Blue Build](https://blue-build.org/) Team for making custom personal operating system images possible.
+Thank you to The [Unversial Blue](https://universal-blue.org/) Team and The [Blue Build](https://blue-build.org/) Team for making custom personal operating system images possible.
