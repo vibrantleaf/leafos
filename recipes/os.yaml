@@ -4,6 +4,10 @@ name: os
 description: My Custom Build of Universal Blue's Bazzite Image
 base-image: ghcr.io/ublue-os/bazzite-deck-gnome
 image-version: stable
+alt-tags:
+  - stable
+platforms:
+  - linux/amd64
 modules:
   - type: files
     files:
