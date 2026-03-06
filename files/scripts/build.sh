@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -oue pipefail
+#set -oue pipefail
 
 git clone https://github.com/root0emir/ArchLinux-GamingPerformanceTuning.git /tmp/cloned/om.github.root0emir.ArchLinux-GamingPerformanceTuning
 cp -v /tmp/com.github.root0emir.ArchLinux-GamingPerformanceTuning/Settings/sysctl.conf /usr/lib/sysctl.d/com-github-root0emir-archLinux-gaming-performance-tuning.conf
