@@ -86,3 +86,6 @@ cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/
 pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
 </code>
 </details>
+
+## Thanks.
+Thanks, to The [Unversial Blue](https://universal-blue.org/) Team and The [Blue Build](https://blue-build.org/) Team for making custom personal operating systems possible.
