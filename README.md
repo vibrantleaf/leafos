@@ -16,7 +16,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 <details>
 <summary>Basic</summary>
 <code>
-cosign verify --key https://raw.githubusercontent.com/vibrantleaf/bazzite/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os:stable
+cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os:stable
 </code>
 <code>
 pkexec bootc switch ghcr.io/vibrantleaf/os:stable
@@ -25,7 +25,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os:stable
 <details>
 <summary>Deck</summary>
 <code>
-cosign verify --key https://raw.githubusercontent.com/vibrantleaf/bazzite/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os-deck:stable
+cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os-deck:stable
 </code>
 <code>
 pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
@@ -34,7 +34,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
 <details>
 <summary>NVida</summary>
 <code>
-cosign verify --key https://raw.githubusercontent.com/vibrantleaf/bazzite/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os-nvidia:stable
+cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os-nvidia:stable
 </code>
 <code>
 pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia:stable
@@ -43,7 +43,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia:stable
 <details>
 <summary>NVidia Open Driver</summary>
 <code>
-cosign verify --key https://raw.githubusercontent.com/vibrantleaf/bazzite/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os-nvidia-open:stable
+cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/leaf/cosign.pub ghcr.io/vibrantleaf/os-nvidia-open:stable
 </code>
 <code>
 pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia-open:stable
