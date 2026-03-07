@@ -3,6 +3,9 @@
 
 Hello, This repository is for building my own custom personal operating system, for fun.
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/os/build.yaml)
+
+
 ## Changes from upstream.
 Here is the changes that I have made in this os image derived from bazzite with gnome.
 - Added: [Microsoft](https://github.com/microsoft/)/[mimalloc](https://github.com/microsoft/mimalloc/)
