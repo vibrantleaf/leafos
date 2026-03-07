@@ -1,10 +1,11 @@
 # os
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="It's Tux, Linux's Penguin Mascot" width="75"/>
 
-Hello, This repository is for building my own custom personal operating system, for fun.
+Hello, This repository is for building my own for fun custom personal operating system.
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/os/build.yaml)
+<img src="https://blue-build.org/_astro/logo-round-dark.t-xMSly5.svg" alt="It's Blue Build's Duck Mascot" width="60"/> Built Using Blue Build.
 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/os/build.yaml)  ![GitHub License](https://img.shields.io/github/license/vibrantleaf/os)
 
 ## Changes from upstream.
 Here is the changes that I have made in this os image derived from bazzite with gnome.
@@ -95,4 +96,4 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
 </details>
 
 ## Thanks.
-Thank you to the [Unversial Blue](https://universal-blue.org/) and the [Blue Build](https://blue-build.org/) Teams for making custom personal operating system images possible.
+Thank you to the [<img src="https://universal-blue.org/content/favicon-new.png" alt="It's Universal Blue's U Logo" width="11"/> Unversial Blue](https://universal-blue.org/) and the [<img src="https://blue-build.org/favicon.svg" alt="It's Blue Build's Duck Mascot" width="11"/> Blue Build](https://blue-build.org/) Teams for making custom personal operating system images possible.
