@@ -4,7 +4,7 @@
 mkdir -p tmp/cloned
 
 git clone https://github.com/root0emir/ArchLinux-GamingPerformanceTuning.git /tmp/cloned/om.github.root0emir.ArchLinux-GamingPerformanceTuning
-cp -v /tmp/com.github.root0emir.ArchLinux-GamingPerformanceTuning/Settings/sysctl.conf /usr/lib/sysctl.d/com-github-root0emir-archLinux-gaming-performance-tuning.conf
+cp -v /tmp/cloned/om.github.root0emir.ArchLinux-GamingPerformanceTuning/Settings/sysctl.conf /usr/lib/sysctl.d/com-github-root0emir.conf
 
 git clone https://gitlab.com/vibrantleaf/systemd-curfew.git /tmp/cloned/com.gitlab.vibrantleaf.systemd-curfew
 cp -v /tmp/cloned/com.gitlab.vibrantleaf.systemd-curfew /usr/lib/systemd/system/curfew-midnight.service

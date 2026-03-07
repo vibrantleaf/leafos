@@ -18,6 +18,7 @@ modules:
       packages:
         - mimalloc
         - gamemode
+        - git
   - type: script
     scripts:
       - "build.sh"
