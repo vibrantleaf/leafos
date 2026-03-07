@@ -22,4 +22,6 @@ modules:
   - type: script
     scripts:
       - "build.sh"
+    snippets:
+      - "dnf install --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree -y kodi"
   - type: signing

@@ -18,5 +18,4 @@ chmod +x /usr/bin/set_win10_style_hostname
 
 rm -rf /tmp/cloned
 
-dnf repo list
-ls -l /etc/yum.repos.d/
+#dnf repo list --all

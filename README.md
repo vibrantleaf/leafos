@@ -10,6 +10,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Added: [root0emir](https://github.com/root0emir)/[ArchLinux-GamingPerformanceTuning's](https://github.com/root0emir/ArchLinux-GamingPerformanceTuning/) [sysctl.conf](https://github.com/root0emir/ArchLinux-GamingPerformanceTuning/blob/main/Settings/sysctl.conf)
 - Added: [Feral Interactive](https://github.com/FeralInteractive/)/[gamemode](https://github.com/FeralInteractive/gamemode)
 - Added: [vibrantleaf](https://gitlab.com/vibrantleaf/)/[systemd-curfew](https://gitlab.com/vibrantleaf/systemd-curfew)
+- Added (deck image only): [kodi](https://kodi.tv)
 - Enabled: NTSYNC Kernel Module by default
 
 ## Installation Guide.
@@ -79,6 +80,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os:stable
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   Note. Only Handhelds and HTPCs with either an AMD or Intel Video Card is supported by this image.
 </div>
+The Handheld / HTPC Image fetures both automaticly starting into the <a href="http://steamdeck.com/" SteamDeck> UI and <a href="https://kodi.tv" Kodi> preinstalled.
 <code>
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os-deck:stable
 </code>
