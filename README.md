@@ -34,7 +34,7 @@ Select Your Video Card's Vendor:
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os:stable
 </code>
 <code>
-pkexec bootc switch ghcr.io/vibrantleaf/os:stable
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/os:stable
 </code>
 </details>
 <details>
@@ -43,7 +43,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os:stable
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os:stable
 </code>
 <code>
-pkexec bootc switch ghcr.io/vibrantleaf/os:stable
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/os:stable
 </code>
 </details>
 <details>
@@ -55,7 +55,7 @@ Select Your Prefered Video Driver:
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os-nvidia-open:stable
 </code>
 <code>
-pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia-open:stable
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/os-nvidia-open:stable
 </code>
 </details>
 <details>
@@ -64,7 +64,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia-open:stable
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os-nvidia:stable
 </code>
 <code>
-pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia:stable
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/os-nvidia:stable
 </code>
 </details>
 <details>
@@ -73,7 +73,7 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-nvidia:stable
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os:stable
 </code>
 <code>
-pkexec bootc switch ghcr.io/vibrantleaf/os:stable
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/os:stable
 </code>
 </details>
 </details>
@@ -91,7 +91,7 @@ The Handheld / HTPC Image fetures both automaticly starting into the <a href="ht
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os-deck:stable
 </code>
 <code>
-pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/os-deck:stable
 </code>
 </details>
 
