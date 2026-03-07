@@ -5,7 +5,7 @@ Hello, This repository is for building my own for fun custom personal operating 
 
 <img src="https://blue-build.org/_astro/logo-round-dark.t-xMSly5.svg" alt="It's Blue Build's Duck Mascot" width="60"/> Built Using Blue Build.
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build.yaml)  ![GitHub License](https://img.shields.io/github/license/vibrantleaf/leafos)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build.yaml)  [![GitHub License](https://img.shields.io/github/license/vibrantleaf/leafos)](https://github.com/vibrantleaf/leafos/blob/main/LICENSE.txt)
 
 ## Changes from upstream.
 Here is the changes that I have made in this os image derived from bazzite with gnome.
