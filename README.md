@@ -80,7 +80,9 @@ pkexec bootc switch ghcr.io/vibrantleaf/os:stable
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   Note. Only Handhelds and HTPCs with either an AMD or Intel Video Card is supported by this image.
 </div>
+<br>
 The Handheld / HTPC Image fetures both automaticly starting into the <a href="http://steamdeck.com/"> SteamDeck</a> UI and <a href="https://kodi.tv"> Kodi</a> preinstalled.
+<br>
 <code>
 cosign verify --key https://raw.githubusercontent.com/vibrantleaf/os/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/os-deck:stable
 </code>
