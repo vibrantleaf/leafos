@@ -97,9 +97,9 @@ pkexec bootc switch ghcr.io/vibrantleaf/os-deck:stable
 
 ## Source Code Mirrors
 The Source Code for this is made aviable via the following mirrors:
-- On [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> GitHb](https:/github.com/vibrantleaf/os)
-- ~~On [<img src="https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="The gitlab Logo" width="11"/> GitLab](https:/gitlab.com/vibrantleaf/os)~~ (SOON)
-- ~~On [<img src="https://codeberg.org/assets/img/favicon.svg" alt="The codeberg Logo" width="11"/> Codebrg](https:/codeberg/vibrantleaf/os)~~ (SOON)
+- On [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> GitHub](https:/github.com/vibrantleaf/os)
+- ~~On [<img src="https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="The gitlab logo" width="11"/> GitLab](https://gitlab.com/vibrantleaf/os)~~ (Soon!)
+- ~~On [<img src="https://codeberg.org/assets/img/favicon.svg" alt="The codeberg Logo" width="11"/> Codebrg](https://codeberg/vibrantleaf/os )~~ (Soon!)
 
 
 
