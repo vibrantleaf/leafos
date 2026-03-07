@@ -19,3 +19,14 @@ chmod +x /usr/bin/set_win10_style_hostname
 rm -rf /tmp/cloned
 
 #dnf repo list --all
+
+
+tee /etc/yum.repos.d/cloudflare-warp.repo <<EOF
+[cloudflare-warp]
+name=Cloudflare WARP
+baseurl=https://pkg.cloudflareclient.com/rpm
+enabled=0
+gpgcheck=1
+gpgkey=https://pkg.cloudflareclient.com/pubkey.gpg
+EOF
+

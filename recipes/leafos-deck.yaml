@@ -23,5 +23,6 @@ modules:
     scripts:
       - "build.sh"
     snippets:
-      - "dnf install --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree -y kodi"
+      - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
+      - "dnf install --refresh --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree -y kodi"
   - type: signing
