@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-set -oue pipefail
+set -o nounset
+set -o pipefail
+set -o xtrace
+set -o errexit
 
 mkdir -p tmp/cloned
 
