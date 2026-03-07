@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: os-deck
+name: leafos-deck
 description: My Custom Build of Universal Blue's Bazzite Image
 base-image: ghcr.io/ublue-os/bazzite-deck-gnome
 image-version: stable

@@ -1,4 +1,4 @@
 {
-	"name": "os-devcontainer",
+	"name": "leafos-devcontainer",
 	"image": "ghcr.io/ublue-os/devcontainer:latest"
 }

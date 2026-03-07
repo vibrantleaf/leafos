@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: os-nvidia
+name: leafos-nvidia
 description: My Custom Build of Universal Blue's Bazzite Image
 base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
 image-version: stable

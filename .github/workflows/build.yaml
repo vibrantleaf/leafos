@@ -29,10 +29,10 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - os.yaml
-          - os-deck.yaml
-          - os-nvidia.yaml
-          - os-nvidia-open.yaml
+          - leafos.yaml
+          - leafos-deck.yaml
+          - leafos-nvidia.yaml
+          - leafos-nvidia-open.yaml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
