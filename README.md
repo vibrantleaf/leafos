@@ -5,7 +5,7 @@ Hello, This repository is for building my own for fun custom personal operating 
 
 <img src="https://blue-build.org/_astro/logo-round-dark.t-xMSly5.svg" alt="It's Blue Build's Duck Mascot" width="60"/> Built Using Blue Build.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/archive/f/f1/20221230202203%21No_AI_art.svg" alt="Anti-AI logo" width="45"/> Made with AI Free Source Code.
+<img src="https://upload.wikimedia.org/wikipedia/commons/archive/f/f1/20221230202203%21No_AI_art.svg" alt="Anti-AI logo" width="45"/> Made with AI Free Code[*](https://github.com/vibrantleaf/leafos/edit/main/README.md#ai-free).
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build.yaml)  [![GitHub License](https://img.shields.io/github/license/vibrantleaf/leafos)](https://github.com/vibrantleaf/leafos/blob/main/LICENSE.txt)
 
@@ -108,3 +108,7 @@ The Source Code for this is made aviable via the following mirrors:
 ## Special Thanks.
 Thank you to the [<img src="https://fedoraproject.org/favicon.ico" alt="It's Fedora's F infitity logo" width="11"/> Fedora](https://fedoraproject.org/), [<img src="https://universal-blue.org/content/favicon-new.png" alt="It's Universal Blue's U Logo" width="11"/> Unversial Blue](https://universal-blue.org/) and the [<img src="https://blue-build.org/favicon.svg" alt="It's Blue Build's Duck Mascot" width="11"/> Blue Build](https://blue-build.org/) Teams for making custom personal operating system images possible.
 Thank you to the [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foot logo" width="11"/> GNOME](https://www.gnome.org/) for making a fantastic desktop environment.
+
+## Clarifications.
+### AI-Free
+The AI Free Code only applys to code for the customisations that I have made to the image, any application or program that is incuded may or may not incude AI Generated Code as unfortantly that is imposable to know
