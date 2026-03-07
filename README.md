@@ -20,11 +20,11 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Enabled: NTSYNC Kernel Module by default
 
 ## Installation Guide.
->Unfortunately due to the size of the `.iso`s an installer cannot be provided.
+>Unfortunately due to the size of the `.iso` installers they cannot be provided.
 
 Inorder to install this os you will need to rebase from a already installed [<img src="https://universal-blue.org/content/favicon-new.png" alt="It's Universal Blue's U Logo" width="11"/> Universal Blue](https://universal-blue.org/) Image Such as [<img src="https://getaurora.dev/aurora-logo.svg" alt="It's Aurora's A Logo" width="11"/> Aurrora](https://getaurora.dev/en/), [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite](https://bazzite.gg/) or [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin](https://projectbluefin.io/) Then follow the [rebase helper](https://github.com/vibrantleaf/os/blob/main/README.md#rebase-helper) and run the supplyed commands in the terminal from with in your Universal Blue Image Installation. after the commands hsve finnished next time you reboot your installation will switch over as if it was a just a normal over-the-air update.
 
-> WARNING: Do not use a CentOS Stream based image such as Bluefin LTS as rebassing between Fedora Atomic and CentOS Stream is unsupported.
+> Warrning: Do not use a CentOS Stream based image such as Bluefin LTS as rebassing between Fedora Atomic and CentOS Stream is unsupported.
 ### Rebase Helper.
 Sellect Your formfactor:
 <details>
