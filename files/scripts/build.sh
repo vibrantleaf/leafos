@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#set -oue pipefail
+set -oue pipefail
 
 mkdir -p tmp/cloned
 
