@@ -30,7 +30,9 @@ dnf install -y --refresh \
 
 git clone --recurse-submodules https://github.com/FEX-Emu/FEX.git /tmp/cloned/com.fex-emu.fex
 mkdir -p /tmp/cloned/com.fex-emu.fex/Build
-(cd /tmp/cloned/com.fex-emu.fex/ && exec  CC=clang CXX=clang++ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja ..)
+CC=clang
+CXX=clang++
+(cd /tmp/cloned/com.fex-emu.fex/ && exec cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja ..)
 (cd /tmp/cloned/com.fex-emu.fex/ && exec ninja)
 (cd /tmp/cloned/com.fex-emu.fex/ && exec ninja install)
 rm -rfv /tmp/cloned
