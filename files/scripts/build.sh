@@ -4,7 +4,7 @@ set -o pipefail
 set -o xtrace
 set -o errexit
 
-mkdir -p tmp/cloned
+mkdir -p /tmp/cloned
 
 git clone https://gitlab.com/vibrantleaf/systemd-curfew.git /tmp/cloned/com.gitlab.vibrantleaf.systemd-curfew
 cp -v /tmp/cloned/com.gitlab.vibrantleaf.systemd-curfew/curfew-midnight.service /usr/lib/systemd/system/curfew-midnight.service
