@@ -1,13 +1,20 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: leafos-nvidia-open
-description: My Custom Build of Universal Blue's Bazzite Image
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia-open
+name: sawfish
+description: My Custom Build of Universal Blue's Bluefin LTS Image
+base-image: ghcr.io/ublue-os/bluefin:lts-hwe
 image-version: stable
 alt-tags:
   - stable
+  - lts
+  - lts-hwe
+  - lts-hwe-stable
+  - arm64-stable
+  - arm64-lts
+  - arm64-lts-hwe
+  - arm64-lts-hwe-stable
 platforms:
-  - linux/amd64
+  - linux/arm64
 modules:
   - type: files
     files:
@@ -17,11 +24,11 @@ modules:
     install:
       packages:
         - mimalloc
-        - gamemode
         - git
   - type: script
     scripts:
       - "build.sh"
     snippets:
       - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
+      - "rm -fv /usr/lib/sysctl.d/com-github-root0emir.conf"
   - type: signing

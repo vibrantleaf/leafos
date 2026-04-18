@@ -1,4 +1,4 @@
-name: bluebuild
+name: build amd64
 on:
   schedule:
     - cron:
@@ -29,10 +29,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - leafos.yaml
-          - leafos-deck.yaml
-          - leafos-nvidia.yaml
-          - leafos-nvidia-open.yaml
+          - arm64/sawfish.yaml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11

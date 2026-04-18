@@ -1,11 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: leafos-nvidia
+name: leafos-deck
 description: My Custom Build of Universal Blue's Bazzite Image
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
+base-image: ghcr.io/ublue-os/bazzite-deck-gnome
 image-version: stable
 alt-tags:
   - stable
+  - amd64-stable
 platforms:
   - linux/amd64
 modules:
@@ -24,4 +25,5 @@ modules:
       - "build.sh"
     snippets:
       - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
+      - "dnf install --refresh --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree -y kodi"
   - type: signing
