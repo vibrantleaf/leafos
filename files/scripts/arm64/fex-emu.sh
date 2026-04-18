@@ -3,7 +3,6 @@ set -o nounset
 set -o pipefail
 set -o xtrace
 set -o errexit
-
 mkdir -p /tmp/cloned
 
 
@@ -30,13 +29,15 @@ dnf install -y --refresh \
 
 git clone --recurse-submodules https://github.com/FEX-Emu/FEX.git /tmp/cloned/com.fex-emu.fex
 
-(cd /tmp/cloned/com.fex-emu.fex && exec \
-  git checkout \
-  $(git describe --tags \
-  $(git rev-list --tags --max-count=1) \
-  ) \
-  )
+# checkout LATEST tag
+#(cd /tmp/cloned/com.fex-emu.fex && exec \
+#  git checkout \
+#  $(git describe --tags \
+#  $(git rev-list --tags --max-count=1) \
+#  ) \
+#  )
 
+# build FEX
 mkdir -p /tmp/cloned/com.fex-emu.fex/Build
 (cd /tmp/cloned/com.fex-emu.fex/Build && exec \
   env CC=clang CXX=clang++ \
