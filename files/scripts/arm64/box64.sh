@@ -19,7 +19,7 @@ mkdir -p /tmp/cloned/org.box86.box64/build
 )
 
 (cd /tmp/cloned/org.box86.box64/build && exec \
-  make \
+  make -j4 \
 )
 
 (cd /tmp/cloned/org.box86.box64/build && exec \
