@@ -1,4 +1,4 @@
-name: build amd64
+name: build arm64
 on:
   schedule:
     - cron:
