@@ -30,5 +30,4 @@ modules:
       - "build.sh"
     snippets:
       - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
-      - "rm -fv /usr/lib/sysctl.d/com-github-root0emir.conf"
   - type: signing

@@ -15,7 +15,6 @@ Checkout [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foo
 Here is the changes that I have made in this os image derived from bazzite with gnome.
 - Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> Microsoft](https://github.com/microsoft/)/[mimalloc](https://github.com/microsoft/mimalloc/)
   - Added: `ujust` script to enable and disable mimalloc globally via `LD_PRELOAD` in `/etc/environment`
-- Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> root0emir](https://github.com/root0emir)/[ArchLinux-GamingPerformanceTuning's](https://github.com/root0emir/ArchLinux-GamingPerformanceTuning/) [sysctl.conf](https://github.com/root0emir/ArchLinux-GamingPerformanceTuning/blob/main/Settings/sysctl.conf)
 - Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> Feral Interactive](https://github.com/FeralInteractive/)/[gamemode](https://github.com/FeralInteractive/gamemode)
 - Added: [<img src="https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="The gitlab logo" width="11"/> vibrantleaf](https://gitlab.com/vibrantleaf/)/[systemd-curfew](https://gitlab.com/vibrantleaf/systemd-curfew)
 - Added: Cloudflare Warp installed by default for [<img src="https://one.one.one.one/favicon.ico" alt="The Cloudflare one dot one dot one dot one logo" width="11"/> 1.1.1.1](https://one.one.one.one/)
