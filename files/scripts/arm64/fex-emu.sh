@@ -32,7 +32,7 @@ git clone --recurse-submodules https://github.com/FEX-Emu/FEX.git /tmp/cloned/co
 mkdir -p /tmp/cloned/com.fex-emu.fex/Build
 CC=clang
 CXX=clang++
-(cd /tmp/cloned/com.fex-emu.fex/ && exec cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja ..)
-(cd /tmp/cloned/com.fex-emu.fex/ && exec ninja)
-(cd /tmp/cloned/com.fex-emu.fex/ && exec ninja install)
+(cd /tmp/cloned/com.fex-emu.fex/Build && exec cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja /tmp/cloned/com.fex-emu.fex)
+(cd /tmp/cloned/com.fex-emu.fex/Build && exec ninja)
+(cd /tmp/cloned/com.fex-emu.fex/Build && exec ninja install)
 rm -rfv /tmp/cloned
