@@ -5,7 +5,7 @@ set -o xtrace
 set -o errexit
 mkdir -p /tmp/cloned
 
-dnf -y --refresh install binutils coreutils curl tar zstd
+dnf -y --refresh install binutils coreutils curl tar zstd cmake make gcc g++
 
 git clone https://github.com/ptitSeb/box64.git /tmp/cloned/org.box86.box64
 mkdir -p /tmp/cloned/org.box86.box64/build
