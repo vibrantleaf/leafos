@@ -15,7 +15,7 @@ mkdir -p /tmp/cloned/org.box86.box64/build
   -D CMAKE_BUILD_TYPE=RelWithDebInfo \
   -D BOX32=ON \
   -D BOX32_BINFMT=ON \
-  /tmp.cloned/org.box86.box64 \
+  /tmp/cloned/org.box86.box64 \
 )
 
 (cd /tmp/cloned/org.box86.box64/build && exec \
