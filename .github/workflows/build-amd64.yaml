@@ -12,6 +12,8 @@ on:
       - "**.gitignore"
       - ".gitlab/*"
       - ".devcontainer/*"
+      - "recipes/arm64/*"
+      - "scripts/arm64/*"
   pull_request:
   workflow_dispatch:
 concurrency:
