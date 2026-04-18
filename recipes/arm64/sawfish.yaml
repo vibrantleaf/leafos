@@ -28,7 +28,7 @@ modules:
   - type: script
     scripts:
       - "build.sh"
-      - "arm64/fex-emu.sh"
+      - "arm64/box64.sh"
     snippets:
       - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
   - type: signing
