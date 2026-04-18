@@ -32,7 +32,7 @@ jobs:
           - amd64/leafos.yaml
           - amd64/leafos-deck.yaml
           - amd64/leafos-nvidia.yaml
-          - amd64leafos-nvidia-open.yaml
+          - amd64/leafos-nvidia-open.yaml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.11
