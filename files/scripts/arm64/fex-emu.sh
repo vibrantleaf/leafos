@@ -29,8 +29,28 @@ dnf install -y --refresh \
   qt6-qtdeclarative-devel
 
 git clone --recurse-submodules https://github.com/FEX-Emu/FEX.git /tmp/cloned/com.fex-emu.fex
+
+(cd /tmp/cloned/com.fex-emu.fex && exec \
+  git checkout \
+  $(git describe --tags \
+  $(git rev-list --tags --max-count=1) \
+  ) \
+  )
+
 mkdir -p /tmp/cloned/com.fex-emu.fex/Build
-(cd /tmp/cloned/com.fex-emu.fex/Build && exec CC=clang CXX=clang++ cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DUSE_LINKER=lld -DENABLE_LTO=True -DBUILD_TESTING=False -DENABLE_ASSERTIONS=False -G Ninja /tmp/cloned/com.fex-emu.fex)
-(cd /tmp/cloned/com.fex-emu.fex/Build && exec ninja)
-(cd /tmp/cloned/com.fex-emu.fex/Build && exec ninja install)
+(cd /tmp/cloned/com.fex-emu.fex/Build && exec \
+  env CC=clang CXX=clang++ \
+  cmake \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DUSE_LINKER=lld \
+  -DENABLE_LTO=True \
+  -DBUILD_TESTING=False \
+  -DENABLE_ASSERTIONS=False \
+  -G Ninja \
+  /tmp/cloned/com.fex-emu.fex && \
+  ninja && \
+  ninja install \
+  )
+
 rm -rfv /tmp/cloned
