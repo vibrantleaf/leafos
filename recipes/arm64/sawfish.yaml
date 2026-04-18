@@ -2,8 +2,8 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: sawfish
 description: My Custom Build of Universal Blue's Bluefin LTS Image
-base-image: ghcr.io/ublue-os/bluefin:lts-hwe
-image-version: stable
+base-image: ghcr.io/ublue-os/bluefin
+image-version: lts-hwe
 alt-tags:
   - stable
   - lts
