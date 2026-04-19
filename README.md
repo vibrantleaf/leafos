@@ -36,6 +36,10 @@ Inorder to install this os you will need to rebase from a already installed [<im
 Sellect Your formfactor:
 <details>
 <summary>Desktop or Laptop</summary>
+<details>
+<summary>Select Your Prossesor Vendor:</summary>
+<details>
+<summary><img src="https://avatars.githubusercontent.com/u/430818" alt="It's Amd's logo" width="11"/> AMD or <img src="https://avatars.githubusercontent.com/u/17888862" alt="It's Intel's logo" width="11"/> Intel</summary>
 Select Your Video Card's Vendor:
 <details>
 <summary><img src="https://avatars.githubusercontent.com/u/430818" alt="It's Amd's logo" width="11"/> AMD</summary>
@@ -84,6 +88,18 @@ cosign verify --key https://raw.githubusercontent.com/vibrantleaf/leafos/refs/he
 <code>
 pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/leafos:stable
 </code>
+</details>
+</details>
+</details>
+<details>
+<summary><img src="https://avatars.githubusercontent.com/u/10639145" alt="It's Apple's logo" width="11"/> Apple, <img src="https://www.rock-chips.com/favicon.ico" alt="It's Rockchip's logo" width="11"/> Rockchip or <img src="https://www.qualcomm.com/etc.clientlibs/qcomm-martech/clientlibs/clientlib-react/resources/favicon/qualcomm/favicon.ico" alt="It's Qualcomm's logo" width="11"/> Qualcomm.</summary>
+<code>
+cosign verify --key https://raw.githubusercontent.com/vibrantleaf/leafos/refs/heads/main/cosign.pub ghcr.io/vibrantleaf/sawfish:arm64-lts-hwe
+</code>
+<code>
+pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/sawfish:arm64-lts-hwe
+</code>
+</details>
 </details>
 </details>
 </details>
