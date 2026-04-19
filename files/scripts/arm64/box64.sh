@@ -47,7 +47,6 @@ mkdir -p /tmp/cloned/org.box86.box64/build
 )
 
 # steam
-mkdir -p /tmp/cloned/org.box86.box64/steam
 
 # get rpmfusion repos
 dnf install -y --refresh dnf-plugins-core
@@ -57,22 +56,27 @@ dnf install -y --refresh --nogpgcheck \
 subscription-manager repos --enable "codeready-builder-for-rhel-$(rpm -E %{rhel})-$(uname -m)-rpms"
 
 # download rpmfusion steam rpm
-dnf download steam --destdir /tmp/cloned/org.box86.box64/steam
+mkdir -p /tmp/cloned/org.box86.box64/steam
+dnf download steam --resolve --destdir /tmp/cloned/org.box86.box64/steam
 
 # extract rpmfusion steam rpm
-(cd /tmp/cloned/org.box86.box64 && exec \
-  rpm2cpio steam*.rpm | cpio -idmv \
+mkdir -p /tmp/cloned/org.box86.box64/steam/root_dir
+(cd /tmp/cloned/org.box86.box64/steam && exec \
+  for file in *.rpm
+  do
+  mv $file /tmp/cloned/org.box86.box64/steam/root_dir/
+  rpm2cpio /tmp/cloned/org.box86.box64/steam/root_dir/$file | cpio -idmv \
+  rm /tmp/cloned/org.box86.box64/steam/root_dir/$file
 )
 ls -l /tmp/cloned/org.box86.box64/steam
-rm -v /tmp/cloned/org.box86.box64/steam/steam*.rpm
+rm -v /tmp/cloned/org.box86.box64/steam/*.rpm
 
 # install steam
-cp -r /tmp/cloned/org.box86.box64/steam/* /
+cp -r /tmp/cloned/org.box86.box64/steam/root_dir/* /
 
 # create steam launcher script
 tee /usr/local/bin/steam <<EOF
 #!/usr/bin/bash
-export STEAMOS=1
 export STEAM_RUNTIME=1
 export PROTON_USE_WOW64=1
 export DBUS_FATAL_WARNINGS=0
