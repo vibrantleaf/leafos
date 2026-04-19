@@ -47,4 +47,4 @@ mkdir -p /tmp/cloned/org.box86.box64/build
 )
 
 # clean up
-rm -f /tmp/cloned
+rm -rf /tmp/cloned
