@@ -14,6 +14,7 @@ on:
       - ".devcontainer/*"
       - "recipes/arm64/*"
       - "files/scripts/arm64/*"
+      - "extra/*"
   pull_request:
   workflow_dispatch:
 concurrency:
