@@ -31,4 +31,12 @@ modules:
       - "arm64/box64.sh"
     snippets:
       - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
+  - type: default-flatpaks
+    configurations:
+    - notify: true
+      scope: system
+      repo:
+        title: Flathub (system)
+      install: 
+        - net.davidotek.pupgui2
   - type: signing

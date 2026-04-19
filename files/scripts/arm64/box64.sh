@@ -46,5 +46,10 @@ mkdir -p /tmp/cloned/org.box86.box64/build
   tar --extract --no-same-owner --file box64-bundle-x86-libs.tar.gz --directory / \
 )
 
+# install steam
+(cd /tmp/cloned/org.box86.box64 && exec \
+  /tmp/cloned/org.box86.box64/install_steam.sh \
+)
+
 # clean up
 rm -rf /tmp/cloned
