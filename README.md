@@ -7,7 +7,12 @@ Hello, This repository is for building my own for fun custom personal operating 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/archive/f/f1/20221230202203%21No_AI_art.svg" alt="Anti-AI logo" width="45"/> Made with AI Free Code[*](https://github.com/vibrantleaf/leafos/tree/main#ai-free).
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build.yaml)  [![GitHub License](https://img.shields.io/github/license/vibrantleaf/leafos)](https://github.com/vibrantleaf/leafos/blob/main/LICENSE.txt)
+[![GitHub License](https://img.shields.io/github/license/vibrantleaf/leafos)](https://github.com/vibrantleaf/leafos/blob/main/LICENSE.txt)
+
+| Image Architecture:    |  Build Automation Status:                                                                                                                                                                                                                     |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AMD64 | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-amd64.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-amd64.yaml) |
+| ARM64 | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-arm64.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-arm64.yaml) |
 
 Checkout [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foot logo" width="11"/>  GNOME Apps](https://apps.gnome.org/en-GB/) for a curated list of Great Applications and [<img src="https://dl.flathub.org/assets/_next/public/favicon.png" alt="It's Flathub's logo" width="11"/>  Flathub](https://flathub.org/en-GB/) The App Store for Linux.
 
