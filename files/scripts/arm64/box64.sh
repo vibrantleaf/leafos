@@ -46,10 +46,39 @@ mkdir -p /tmp/cloned/org.box86.box64/build
   tar --extract --no-same-owner --file box64-bundle-x86-libs.tar.gz --directory / \
 )
 
-# install steam
+# steam
+mkdir -p /tmp/cloned/org.box86.box64/steam
+
+# get rpmfusion repos
+dnf install -y --refresh dnf-plugins-core
+dnf install -y --refresh --nogpgcheck \
+  https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm -E %rhel).noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
+subscription-manager repos --enable "codeready-builder-for-rhel-$(rpm -E %{rhel})-$(uname -m)-rpms"
+
+# download rpmfusion steam rpm
+dnf download steam --destdir /tmp/cloned/org.box86.box64/steam
+
+# extract rpmfusion steam rpm
 (cd /tmp/cloned/org.box86.box64 && exec \
-  /tmp/cloned/org.box86.box64/install_steam.sh \
+  rpm2cpio steam*.rpm | cpio -idmv \
 )
+ls -l /tmp/cloned/org.box86.box64/steam
+rm -v /tmp/cloned/org.box86.box64/steam/steam*.rpm
+
+# install steam
+cp -r /tmp/cloned/org.box86.box64/steam/* /
+
+# create steam launcher script
+tee /usr/local/bin/steam <<EOF
+#!/usr/bin/bash
+export STEAMOS=1
+export STEAM_RUNTIME=1
+export PROTON_USE_WOW64=1
+export DBUS_FATAL_WARNINGS=0
+~/steam/bin/steam $@
+EOF
+chmod +x /usr/local/bin/
 
 # clean up
 rm -rf /tmp/cloned
