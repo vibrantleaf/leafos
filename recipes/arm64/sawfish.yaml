@@ -25,6 +25,7 @@ modules:
       packages:
         - mimalloc
         - git
+        - gtk2 # needed: for steam on arm64 support
   - type: script
     scripts:
       - "build.sh"
