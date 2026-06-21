@@ -22,8 +22,15 @@ modules:
         - git
   - type: script
     scripts:
-      - "build.sh"
+      - "amd64/build.sh"
     snippets:
-      - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
       - "dnf install --refresh --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree -y kodi"
+  - type: default-flatpaks
+    configurations:
+    - notify: true
+      scope: system
+      repo:
+        title: Flathub (system)
+      install: 
+        - app.zen_browser.zen
   - type: signing

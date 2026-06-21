@@ -28,10 +28,10 @@ modules:
         - gtk2 # needed: for steam on arm64 support
   - type: script
     scripts:
-      - "build.sh"
+      - "arm64/build.sh"
       #- "arm64/box64.sh"
     snippets:
-      - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
+      - "rm /usr/sysctl.d/ntsync.conf"
   - type: default-flatpaks
     configurations:
     - notify: true
@@ -39,5 +39,5 @@ modules:
       repo:
         title: Flathub (system)
       install: 
-        - net.davidotek.pupgui2
+        - app.zen_browser.zen
   - type: signing

@@ -22,7 +22,13 @@ modules:
         - git
   - type: script
     scripts:
-      - "build.sh"
-    snippets:
-      - "dnf install --refresh --enablerepo=cloudflare-warp -y cloudflare-warp"
+      - "amd64/build.sh"
+  - type: default-flatpaks
+    configurations:
+    - notify: true
+      scope: system
+      repo:
+        title: Flathub (system)
+      install: 
+        - app.zen_browser.zen
   - type: signing
