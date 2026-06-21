@@ -42,9 +42,9 @@ modules:
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
-    dest: /usr/share
+    dest: /usr/share/backgrounds
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable 
     src: /usr/share/gnome-background-properties
-    dest: /usr/share
+    dest: /usr/share/gnome-background-properties
   - type: signing

@@ -18,4 +18,11 @@ rm -rf /tmp/cloned
 # link htop to btop
 ln -s /usr/bin/btop /usr/bin/htop
 
+#
+rm -rfv /usr/share/backgrounds
+rm -rfv /usr/share/gnome-background-properties
+mkdir -p /usr/share/backgrounds
+mkdir -p /usr/share/gnome-background-properties
+
+
 #dnf repo list --all
