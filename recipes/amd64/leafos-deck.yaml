@@ -47,4 +47,7 @@ modules:
     from: ghcr.io/ublue-os/bluefin:stable 
     src: /usr/share/gnome-background-properties
     dest: /usr/share/gnome-background-properties
+  - type: gschema-overrides
+    include:
+      - "amd64/leafos.gschema.override"
   - type: signing

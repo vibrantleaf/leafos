@@ -1,0 +1,12 @@
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+
+[org.gnome.desktop.peripherals.touchpad:GNOME-Greeter]
+tap-to-click=true
+
+[org.gnome.mutter]
+check-alive-timeout=uint32 20000
+
+[prg.gnome.desktop.background]
+picture-uri="file:///usr/share/backgrounds/bluefin/08-bluefin.xml"
+picture-uri-dark="file:///usr/share/backgrounds/bluefin/08-bluefin.xml"
