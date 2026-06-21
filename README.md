@@ -26,7 +26,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Added (deck image only): [<img src="https://kodi.tv/favicon.svg" alt="The Kodi logo" width="11"/> kodi](https://kodi.tv)
 - Enabled: NTSYNC Kernel Module by default
 - Replaced: `htop` with `btop`, a more modern alternitive to `top`
-- Replaced: [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite's](https://bazzite.gg/) Bazzite's default wallpapers with [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin's](https://projectbluefin.io/) default wallpapers
+- Replaced: [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite's](https://bazzite.gg/) default wallpapers with [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin's](https://projectbluefin.io/) default wallpapers
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
 
