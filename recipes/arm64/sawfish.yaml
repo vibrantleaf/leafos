@@ -26,6 +26,10 @@ modules:
         - mimalloc
         - git
         - gtk2 # needed: for steam on arm64 support
+    remove:
+      auto-remove: true
+      packages:
+        - firefox
   - type: script
     scripts:
       - "arm64/build.sh"
