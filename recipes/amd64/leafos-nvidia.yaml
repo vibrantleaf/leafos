@@ -47,5 +47,5 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - "amd64/leafos.gschema.override"
+      - leafos.gschema.override
   - type: signing

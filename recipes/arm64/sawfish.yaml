@@ -56,5 +56,5 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - "arm64/sawfish.gschema.override"
+      - sawfish.gschema.override
   - type: signing
