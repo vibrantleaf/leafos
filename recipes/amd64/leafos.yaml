@@ -1,5 +1,5 @@
 ---
-# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
 name: leafos
 description: My Custom Build of Universal Blue's Bazzite Image
 base-image: ghcr.io/ublue-os/bazzite-gnome
@@ -20,6 +20,7 @@ modules:
         - mimalloc
         - gamemode
         - git
+    
   - type: script
     scripts:
       - "amd64/build.sh"
@@ -31,4 +32,6 @@ modules:
         title: Flathub (system)
       install: 
         - app.zen_browser.zen
+      remove:
+        - org.mozilla.firefox
   - type: signing
