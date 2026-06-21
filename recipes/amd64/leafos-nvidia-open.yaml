@@ -39,4 +39,8 @@ modules:
         - app.zen_browser.zen
       remove:
         - org.mozilla.firefox
+  - type: containerfile
+    snippets:
+      - COPY --from ghcr.io/ublue-os/bluefin:stable /usr/share/backgrounds/* /usr/share/backgrounds
+      - COPY --from ghcr.io/ublue-os/bluefin:stable /usr/share/gnome-background-properties/* /usr/share/gnome-background-properties
   - type: signing
