@@ -39,12 +39,10 @@ modules:
         title: Flathub (system)
       install: 
         - app.zen_browser.zen
-      remove:
-        - org.mozilla.firefox
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds/
-    dest /usr/share/
+    dest: /usr/share/
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable 
     src: /usr/share/gnome-background-properties/
