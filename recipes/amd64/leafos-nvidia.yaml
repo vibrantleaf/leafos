@@ -20,10 +20,12 @@ modules:
         - mimalloc
         - gamemode
         - git
+        - btop
     remove:
       auto-remove: true
       packages:
         - firefox
+        - htop
   - type: script
     scripts:
       - "amd64/build.sh"

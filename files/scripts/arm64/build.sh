@@ -15,4 +15,7 @@ chmod +x /usr/bin/set_win10_style_hostname
 
 rm -rf /tmp/cloned
 
+# link htop to btop
+ln -s /usr/bin/btop /usr/bin/htop
+
 #dnf repo list --all

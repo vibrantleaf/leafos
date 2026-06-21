@@ -25,6 +25,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - ~~Added: Cloudflare Warp installed by default for [<img src="https://one.one.one.one/favicon.ico" alt="The Cloudflare one dot one dot one dot one logo" width="11"/> 1.1.1.1](https://one.one.one.one/)~~
 - Added (deck image only): [<img src="https://kodi.tv/favicon.svg" alt="The Kodi logo" width="11"/> kodi](https://kodi.tv)
 - Enabled: NTSYNC Kernel Module by default
+- Replaced: `htop` with `btop`, a more modern alternitive to `top`
 
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.

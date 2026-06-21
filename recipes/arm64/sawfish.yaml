@@ -25,11 +25,13 @@ modules:
       packages:
         - mimalloc
         - git
+        - btop
         - gtk2 # needed: for steam on arm64 support
     remove:
       auto-remove: true
       packages:
         - firefox
+        - htop
   - type: script
     scripts:
       - "arm64/build.sh"
