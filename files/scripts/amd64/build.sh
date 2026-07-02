@@ -25,3 +25,7 @@ mkdir -p /usr/share/backgrounds
 mkdir -p /usr/share/gnome-background-properties
 
 #dnf repo list --all
+
+# remove default gnome extensions
+dnf remove -y --setopt=clean_requirements_on_remove=True gnome-shell-extension-*
+dnf install -y gnome-menus
