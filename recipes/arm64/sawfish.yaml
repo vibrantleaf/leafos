@@ -26,6 +26,8 @@ modules:
         - mimalloc
         - git
         - btop
+        - arc-theme
+        - papirus-icon-theme
         - gtk2 # needed: for steam on arm64 support
     remove:
       auto-remove: true

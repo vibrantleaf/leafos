@@ -27,6 +27,9 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Enabled: NTSYNC Kernel Module by default
 - Replaced: `htop` with `btop`, a more modern alternitive to `top`
 - Replaced: [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite's](https://bazzite.gg/) default wallpapers with [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin's](https://projectbluefin.io/) default wallpapers
+- Changed: Uses the Arc-Lighter theme by default.
+  - added: `ujust use-arc-dark-theme` & `ujust use-arc-light-theme` to switch between the recommended dark/light themes.
+- Changed: Uses the Papirus icons by default
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
 

@@ -10,3 +10,8 @@ check-alive-timeout=uint32 20000
 [prg.gnome.desktop.background]
 picture-uri="file:///usr/share/backgrounds/bluefin/08-bluefin.xml"
 picture-uri-dark="file:///usr/share/backgrounds/bluefin/08-bluefin.xml"
+
+[org.gnome.desktop.interface]
+#gtk-theme="Arc-Dark"
+gtk-theme="Arc-Lighter"
+icon-theme="Papirus"

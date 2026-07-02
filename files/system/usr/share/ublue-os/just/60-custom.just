@@ -10,5 +10,17 @@ use-mimalloc-globally:
 [group("system")]
 remove-global-mimalloc:
     #!/usr/bin/env bash
-    printf "Removing global mimalloc"
+    printf "Removing global mimalloc\n"
     sudo sed 'LD_PRELOAD=/usr/lib64/libmimalloc.so.2' /etc/environment
+
+# Use the recommended Light theme
+use-arc-light-theme:
+    #!/usr/bin/env bash
+    printf "Setting the arc theme to Arc-lighter\n"
+    gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Lighter'
+
+# Use the recommended Dark theme
+use-arc-dark-theme:
+    #!/usr/bin/env bash
+    printf "Setting the arc theme to Arc-Dark\n"
+    gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Dark'

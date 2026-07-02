@@ -21,6 +21,8 @@ modules:
         - gamemode
         - git
         - btop
+        - arc-theme
+        - papirus-icon-theme
     remove:
       auto-remove: true
       packages:
