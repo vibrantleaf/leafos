@@ -30,7 +30,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Changed: Uses the Arc-Lighter theme by default.
   - added: `ujust use-arc-dark-theme` & `ujust use-arc-light-theme` to switch between the recommended dark/light themes.
 - Changed: Uses the Papirus icons by default.
-
+- Tweaked: Uses 24h clock by default.
 ### GNOME Extensions
 The following is a list of the preinstalled GNOME extensions and there ID number.
 | ID: | Name: |
