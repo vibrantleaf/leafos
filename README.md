@@ -45,7 +45,8 @@ The following is a list of the preinstalled GNOME extensions and there ID number
 | 1319 | GSConnect |
 | 5446 | Quick Settings Tweaks |
 | 3628 | ArcMenu |
-| 4655 | Date Menu Formatter |
+| ~~4655~~ | ~~Date Menu Formatter~~ |
+
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
 

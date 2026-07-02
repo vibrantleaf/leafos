@@ -61,5 +61,5 @@ modules:
       - 1319 # GSConnect
       - 5446 # Quick Settings Tweaks
       - 3628 # ArcMenu
-      - 4655 # Date Menu Formatter
+      #- 4655 # Date Menu Formatter
   - type: signing
