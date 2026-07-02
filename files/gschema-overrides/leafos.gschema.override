@@ -16,3 +16,6 @@ picture-uri-dark="file:///usr/share/backgrounds/bluefin/08-bluefin.xml"
 gtk-theme="Arc-Lighter"
 icon-theme="Papirus"
 clock-format="24h"
+
+[org.gnome.desktop.wm.preferences]
+button-layout="close,minimize,maximize:"
