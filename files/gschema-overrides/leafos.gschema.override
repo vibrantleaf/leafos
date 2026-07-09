@@ -36,7 +36,7 @@ show-battery-percentage=true
 [org.gnome.desktop.wm.preferences]
 button-layout='close,minimize,maximize:appmenu'
 action-double-click-titlebar='toggle-maximize'
-auto-raise true
+auto-raise=true
 
 [org.gnome.desktop.wm.keybindings]
 switch-windows="['<Alt>Tab']"
