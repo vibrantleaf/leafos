@@ -22,13 +22,14 @@ enable-animations=true
 clock-format="24h"
 clock-show-seconds=true
 clock-show-date=true
-show-weekdate=true
 cursor-size=32
 font-hinting='slight'
 font-antialiasing='rgba'
 enable-hot-corners=false
 show-battery-percentage=true
 
+[org.gnome.desktop.calendar]
+show-weekdate=true
 
 [org.gnome.desktop.wm.preferences]
 button-layout='close,minimize,maximize:appmenu'
@@ -77,4 +78,3 @@ remove-old-trash-files=true
 remove-old-temp-files=true
 remember-recent-files=true
 recent-files-max-age=7
-
