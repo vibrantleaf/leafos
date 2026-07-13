@@ -73,4 +73,5 @@ modules:
       - 8098 # Wellbeing Toggle
       - 7048 # Rounded Window Corners Reborn
       - 8261 # SimpleWeather
+      - 9983 # Touchshell
   - type: signing

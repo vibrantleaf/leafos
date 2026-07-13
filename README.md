@@ -49,6 +49,7 @@ The following is a list of the preinstalled GNOME Extensions and the appropriate
 | 7065 | [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) |
 | 8098 | [Wellbeing Toggle](https://extensions.gnome.org/extension/8098/wellbeing-toggle/) |
 | 8261 | [SimpleWeather](https://extensions.gnome.org/extension/8261/simpleweather/) |
+| 9983 | [Touchshell](https://extensions.gnome.org/extension/9983/touchshell/) |
 
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
