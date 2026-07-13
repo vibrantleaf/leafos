@@ -34,7 +34,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Tweaked: Uses Left-side Close, Minimize and Maximize window decoration buttons.
 
 ### GNOME Extensions
-The following is a list of the preinstalled GNOME extensions and there ID number.
+The following is a list of the preinstalled GNOME Extensions and the appropriate ID number.
 | ID: | Name: |
 | --- |--- |
 | 307 | Dash to Dock |
