@@ -19,11 +19,14 @@ modules:
       packages:
         - mimalloc
         - gamemode
+        - mangohud
         - git
         - btop
         - arc-theme
         - papirus-icon-theme
         - gnome-menus
+        - nushell
+        - fish
     remove:
       auto-remove: true
       packages:

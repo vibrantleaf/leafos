@@ -29,6 +29,9 @@ modules:
         - arc-theme
         - papirus-icon-theme
         - gtk2 # needed: for steam on arm64 support
+        - gnome-menus
+        - nushell
+        - fish
     remove:
       auto-remove: true
       packages:
