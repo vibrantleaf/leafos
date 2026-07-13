@@ -1,4 +1,40 @@
 rows:
+- section:
+    title: "Gaming"
+    subtitle:
+      string: "Recomended Gaming Apps"
+      appids:
+        - com.heroicgameslauncher.hgl
+        - io.itch.itch
+        - org.libretro.RetroArch
+        - com.mojang.Minecraft
+        - org.gnome.gitlab.wwarner.Solitaire
+        - org.gnome.TwentyFortyEight
+        - app.drey.Blurble
+        - org.gnome.Mines
+        - org.gnome.Chess
+        - org.gnome.Reversi
+        - org.gnome.Mahjongg
+        - org.gnome.Sudoku
+        - org.gnome.Taquin
+        - org.gnome.Nibbles
+        - org.gnome.Tetravex
+        - org.gnome.Crosswords
+        - org.gnome.gitlab.bazylevnik0.Convolution
+        - org.tuxemon.Tuxemon
+        - org.gnome.HexGL
+        - org.openttd.OpenTTD
+        - org.freeciv.gtk4
+        - net.supertuxkart.SuperTuxKart
+        - org.luanti.luanti
+        - com.github.Anuken.Mindustry
+        - io.github.ec_.Quake3e.OpenArena
+        - org.xonotic.Xonotic
+        - io.github.Youda008.DoomRunner
+        - io.github.doukutsu_rs.doukutsu-rs
+        - org.diasurgical.DevilutionX
+        - net.openra.OpenRA
+        - org.openmw.OpenMW
   - section:
     title: "Self Care"
     subtitle:
