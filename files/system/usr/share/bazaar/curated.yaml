@@ -1,0 +1,34 @@
+rows:
+  - section:
+    title: "Self Care"
+    subtitle:
+      string: "Recomended Apps to help you Rest and Relax"
+      appids:
+        - io.github.seadve.Breathing
+        - com.rafaelmardojai.Blanket
+        - org.standardnotes.standardnotes
+        - com.github.neithern.g4music
+        - com.spotify.Client
+        - com.mastermindzh.tidal-hifi
+        - dev.aunetx.deezer
+        - de.haeckerfelix.Shortwave
+  - section:
+    title: "Office"
+    subtitle:
+      string: "Recomended Office Apps"
+      appids:
+        - org.mozilla.thunderbird
+        - org.libreoffice.LibreOffice
+        - org.onlyoffice.desktopeditors
+        - com.collaboraoffice.Office
+        - com.wps.Office
+        - org.gnome.Papers
+        - page.codeberg.censor.Censor
+        - io.github.diegoivan.pdf_metadata_editor
+        - md.obsidian.Obsidian
+        - io.github.alainm23.planify
+        - org.gnome.Solanum
+        - us.zoom.Zoom
+        - com.github.IsmaelMartinez.teams_for_linux
+        - com.slack.Slack
+        - org.gimp.GIMP
