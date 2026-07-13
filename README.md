@@ -37,18 +37,18 @@ Here is the changes that I have made in this os image derived from bazzite with 
 The following is a list of the preinstalled GNOME Extensions and the appropriate ID number.
 | ID: | Name: |
 | --- |--- |
-| 307 | Dash to Dock |
-| 615 |  AppIndicator and KStatusNotifierItem Support |
-| 3193 | Blur my Shell |
-| 517 | Caffeine |
-| 7065 | Tiling Shell |
-| 779 | Clipboard Indicator |
-| 1319 | GSConnect |
-| 3628 | ArcMenu |
-| 4655 | Date Menu Formatter |
-| 8098 | Wellbeing Toggle |
-| 7048 | Rounded Window Corners Reborn |
-| 8261 | SimpleWeather
+| 307 | [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) |
+| 615 |  [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) |
+| 3193 | [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) |
+| 517 | [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) |
+| 7065 | [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) |
+| 779 | [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) |
+| 1319 | [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) |
+| 3628 | [ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) |
+| 4655 | [Date Menu Formatter](https://extensions.gnome.org/extension/4655/date-menu-formatter/) |
+| 8098 | [Wellbeing Toggle](https://extensions.gnome.org/extension/8098/wellbeing-toggle/) |
+| 7048 | [Rounded Window Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/) |
+| 8261 | [SimpleWeather](https://extensions.gnome.org/extension/8261/simpleweather/) |
 
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
