@@ -44,9 +44,11 @@ The following is a list of the preinstalled GNOME extensions and there ID number
 | 7065 | Tiling Shell |
 | 779 | Clipboard Indicator |
 | 1319 | GSConnect |
-| ~~5446~~ | ~~Quick Settings Tweaks~~ |
 | 3628 | ArcMenu |
-| ~~4655~~ | ~~Date Menu Formatter~~ |
+| 4655 | Date Menu Formatter |
+| 8098 | Wellbeing Toggle |
+| 7048 | Rounded Window Corners Reborn |
+| 8261 | SimpleWeather
 
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
