@@ -88,5 +88,12 @@ modules:
           url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Nerd.Font.Complete.ttf"
         - name: ComicMonoBoldNF
           url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Bold.Nerd.Font.Complete.Windows.Compatible.ttf"
+  - type: kargs
+    arch: x86_64
+    kargs:
+      - mitigations=on
+      - systemd.unified_cgroup_hierarchy=0
+      - panic=30
+      - vm.dirty_writeback_centisecs=6000
   - type: initramfs
   - type: signing
