@@ -32,7 +32,7 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Changed: Uses the Papirus icons by default.
 - Tweaked: Uses 24h clock by default.
 - Tweaked: Uses Left-side Close, Minimize and Maximize window decoration buttons.
-And More.
+- And More.
 
 ### GNOME Extensions
 The following is a list of the preinstalled GNOME Extensions and the appropriate ID number.
