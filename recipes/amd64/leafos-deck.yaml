@@ -71,4 +71,9 @@ modules:
       - 7048 # Rounded Window Corners Reborn
       - 8261 # SimpleWeather
       - 9983 # Touchshell
+  - type: os-release
+    properties:
+      ID: leafos_deck
+      NAME: LeafOSDeck
+      PRETTY_NAME: "LeafOS Deck"
   - type: signing

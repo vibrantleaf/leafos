@@ -69,4 +69,9 @@ modules:
       - 7048 # Rounded Window Corners Reborn
       - 8261 # SimpleWeather
       - 9983 # Touchshell
+  - type: os-release
+    properties:
+      ID: leafos_workstation
+      NAME: LeafOSWorkstation
+      PRETTY_NAME: "LeafOS Workstation"
   - type: signing

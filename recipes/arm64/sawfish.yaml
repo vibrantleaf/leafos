@@ -77,4 +77,9 @@ modules:
       - 7048 # Rounded Window Corners Reborn
       - 8261 # SimpleWeather
       - 9983 # Touchshell
+  - type: os-release
+    properties:
+      ID: sawfish
+      NAME: Sawfish
+      PRETTY_NAME: "LeafOS Workstation ARM64 Codename: Sawfish"
   - type: signing
