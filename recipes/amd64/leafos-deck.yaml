@@ -76,4 +76,5 @@ modules:
       ID: leafos_deck
       NAME: LeafOSDeck
       PRETTY_NAME: "LeafOS Deck"
+  - type: initramfs
   - type: signing

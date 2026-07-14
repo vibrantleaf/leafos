@@ -82,4 +82,5 @@ modules:
       ID: sawfish
       NAME: Sawfish
       PRETTY_NAME: "LeafOS Workstation ARM64 Codename: Sawfish"
+  - type: initramfs
   - type: signing

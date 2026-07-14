@@ -74,4 +74,5 @@ modules:
       ID: leafos_workstation
       NAME: LeafOSWorkstation
       PRETTY_NAME: "LeafOS Workstation"
+  - type: initramfs
   - type: signing
