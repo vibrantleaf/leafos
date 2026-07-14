@@ -24,6 +24,8 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Added: [<img src="https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="The gitlab logo" width="11"/> vibrantleaf](https://gitlab.com/vibrantleaf/)/[systemd-curfew](https://gitlab.com/vibrantleaf/systemd-curfew)
 - ~~Added: Cloudflare Warp installed by default for [<img src="https://one.one.one.one/favicon.ico" alt="The Cloudflare one dot one dot one dot one logo" width="11"/> 1.1.1.1](https://one.one.one.one/)~~
 - Added (deck image only): [<img src="https://kodi.tv/images/kodi-logo-with-text.svg" alt="The Kodi logo" width="11"/> kodi](https://kodi.tv)
+- Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/>[vibrantleaf](github.com/vibrantleaf/)/[comic-mono-font-NF](https://github.com/vibrantleaf/comic-mono-font-NF)
+- Added: All Google [noto fonts](https://fonts.google.com/noto)
 - Enabled: NTSYNC Kernel Module by default
 - Replaced: `htop` with `btop`, a more modern alternitive to `top`
 - Replaced: [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite's](https://bazzite.gg/) default wallpapers with [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin's](https://projectbluefin.io/) default wallpapers

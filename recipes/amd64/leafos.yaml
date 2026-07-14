@@ -27,6 +27,7 @@ modules:
         - gnome-menus
         - nushell
         - fish
+        - google-noto-fonts-all
     remove:
       auto-remove: true
       packages:
@@ -74,5 +75,16 @@ modules:
       ID: leafos_workstation
       NAME: LeafOSWorkstation
       PRETTY_NAME: "LeafOS Workstation"
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Roboto
+        - Open Sans
+        - Ubuntu
+      url-fonts:
+        - name: ComicMonoNF
+          url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Nerd.Font.Complete.ttf"
+        - name: ComicMonoBoldNF
+          url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Bold.Nerd.Font.Complete.Windows.Compatible.ttf"
   - type: initramfs
   - type: signing
