@@ -19,7 +19,27 @@ Hello, This repository is for building my own for fun custom personal operating 
 
 Checkout [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foot logo" width="11"/>  GNOME Apps](https://apps.gnome.org/en-GB/) for a curated list of Great Applications and [<img src="https://dl.flathub.org/assets/_next/public/favicon.png" alt="It's Flathub's logo" width="11"/>  Flathub](https://flathub.org/en-GB/) The App Store for Linux.
 
-## Shark (The Premire LeafOS Images)
+## GNOME Extensions
+The following is a list of the preinstalled GNOME Extensions and the appropriate ID number.
+| ID: | Name: |
+| --- |--- |
+| 307 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_307_2.png" alt="Dash to Dock Logo" width="25"/> Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) |
+| 517 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_517.png" alt="Caffeine Logo" width="25"/> Caffeine](https://extensions.gnome.org/extension/517/caffeine/) |
+| 615 | [<img src="https://extensions.gnome.org/static/images/plugin.png" alt="AppIndicator and K Status Notifier Item Support Logo" width="32"/> AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) |
+| 779 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_779_cGrEoF7.png" alt="Clipboard Indicator Logo" width="32"/> Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) |
+| 1319 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_1319_VlYFTP0.png" alt="G S Connect Logo" width="32"/> GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) |
+| 3193 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_3193_QedHJZY.png" alt="Blur my Shell Logo" width="32"/> Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) |
+| 3628 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_3628_57rtk3m.png" alt="Arc Menu Logo" width="32"/> ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) |
+| 4655 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_4655.png" alt="Date Menu Formatter Logo" width="32"/> Date Menu Formatter](https://extensions.gnome.org/extension/4655/date-menu-formatter/) |
+| 7048 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_7048.png" alt="Rounded Window Corners Reborn Logo" width="32"/> Rounded Window Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/) |
+| 7065 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_7065.png" alt="Tiling Shell Logo" width="32"/> Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) |
+| 8098 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_8098.png" alt="Wellbeing Toggle Logo" width="32"/> Wellbeing Toggle](https://extensions.gnome.org/extension/8098/wellbeing-toggle/) |
+| 8261 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_8261.png" alt="Simple Weather Logo" width="32"/> SimpleWeather](https://extensions.gnome.org/extension/8261/simpleweather/) |
+| 9983 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_9983.png" alt="Touchshell Logo" width="32"/> Touchshell](https://extensions.gnome.org/extension/9983/touchshell/) |
+
+---
+## LeafOS Shark
+The Premire Images.
 
 ### Changes from upstream.
 Here is the changes that I have made in this os image derived from bazzite with gnome.
@@ -41,31 +61,13 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Tweaked: Uses Left-side Close, Minimize and Maximize window decoration buttons.
 - And More.
 
-### GNOME Extensions
-The following is a list of the preinstalled GNOME Extensions and the appropriate ID number.
-| ID: | Name: |
-| --- |--- |
-| 307 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_307_2.png" alt="Dash to Dock Logo" width="25"/> Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) |
-| 517 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_517.png" alt="Caffeine Logo" width="25"/> Caffeine](https://extensions.gnome.org/extension/517/caffeine/) |
-| 615 | [<img src="https://extensions.gnome.org/static/images/plugin.png" alt="AppIndicator and K Status Notifier Item Support Logo" width="32"/> AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) |
-| 779 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_779_cGrEoF7.png" alt="Clipboard Indicator Logo" width="32"/> Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) |
-| 1319 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_1319_VlYFTP0.png" alt="G S Connect Logo" width="32"/> GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) |
-| 3193 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_3193_QedHJZY.png" alt="Blur my Shell Logo" width="32"/> Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) |
-| 3628 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_3628_57rtk3m.png" alt="Arc Menu Logo" width="32"/> ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) |
-| 4655 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_4655.png" alt="Date Menu Formatter Logo" width="32"/> Date Menu Formatter](https://extensions.gnome.org/extension/4655/date-menu-formatter/) |
-| 7048 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_7048.png" alt="Rounded Window Corners Reborn Logo" width="32"/> Rounded Window Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/) |
-| 7065 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_7065.png" alt="Tiling Shell Logo" width="32"/> Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) |
-| 8098 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_8098.png" alt="Wellbeing Toggle Logo" width="32"/> Wellbeing Toggle](https://extensions.gnome.org/extension/8098/wellbeing-toggle/) |
-| 8261 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_8261.png" alt="Simple Weather Logo" width="32"/> SimpleWeather](https://extensions.gnome.org/extension/8261/simpleweather/) |
-| 9983 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_9983.png" alt="Touchshell Logo" width="32"/> Touchshell](https://extensions.gnome.org/extension/9983/touchshell/) |
-
-## Installation Guide.
+### Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
 
 Inorder to install this os you will need to rebase from a already installed [<img src="https://universal-blue.org/content/favicon-new.png" alt="It's Universal Blue's U Logo" width="11"/> Universal Blue](https://universal-blue.org/) Image Such as [<img src="https://getaurora.dev/aurora-logo.svg" alt="It's Aurora's A Logo" width="11"/> Aurrora](https://getaurora.dev/en/), [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite](https://bazzite.gg/) or [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin](https://projectbluefin.io/) Then follow the [rebase helper](https://github.com/vibrantleaf/os/blob/main/README.md#rebase-helper) and run the supplyed commands in the terminal from with in your Universal Blue Image Installation. after the commands hsve finnished next time you reboot your installation will switch over as if it was a just a normal over-the-air update.
 
 > Warrning: Do not use a CentOS Stream based image such as Bluefin LTS as rebassing between Fedora Atomic and CentOS Stream is unsupported.
-### Rebase Helper.
+#### Rebase Helper.
 Sellect Your formfactor:
 <details>
 <summary>Desktop or Laptop</summary>
@@ -152,6 +154,21 @@ cosign verify --key https://raw.githubusercontent.com/vibrantleaf/leafos/refs/he
 pkexec bootc switch --enforce-container-sigpolicy ghcr.io/vibrantleaf/leafos-deck:stable
 </code>
 </details>
+
+---
+## LeafOS Gecko
+- Todo.
+---
+
+## LeafOS Floral
+- Todo.
+
+---
+
+## LeafOS Sawfish
+- Todo.
+
+----
 
 ## Source Code Mirrors.
 The Source Code for this project is made aviable via the following mirrors:
