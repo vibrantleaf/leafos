@@ -12,6 +12,7 @@ on:
       - "**.gitignore"
       - ".gitlab/*"
       - ".devcontainer/*"
+      - "recipes/amd64/el/*"
       - "recipes/arm64/*"
       - "files/scripts/arm64/*"
       - "extra/*"
