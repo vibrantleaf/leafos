@@ -33,17 +33,16 @@ modules:
       packages:
         - firefox
         - htop
+        - gnome-shell-extension-gsconnect
+        - gnome-shell-extension-user-theme
+        - rom-properties-gtk4
+        - rom-properties-localsearch3
+        - steamdeck-gnome-presets
+        - steamdeck-backgrounds
+        - nautilus-gsconnect
   - type: script
     scripts:
       - "amd64/build.sh"
-  - type: default-flatpaks
-    configurations:
-    - notify: true
-      scope: system
-      repo:
-        title: Flathub (system)
-      install: 
-        - app.zen_browser.zen
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds

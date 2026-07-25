@@ -44,14 +44,6 @@ modules:
       #- "arm64/box64.sh"
     snippets:
       - "rm /usr/sysctl.d/ntsync.conf"
-  - type: default-flatpaks
-    configurations:
-    - notify: true
-      scope: system
-      repo:
-        title: Flathub (system)
-      install: 
-        - app.zen_browser.zen
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
