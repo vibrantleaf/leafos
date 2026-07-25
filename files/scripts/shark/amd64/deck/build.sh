@@ -13,15 +13,22 @@ git clone https://gist.github.com/vibrantleaf/ef3cd8a31ead32063a745fcc57b8a0de.g
 cp -v /tmp/cloned/com.github.gist.vibrantleaf.ef3cd8a31ead32063a745fcc57b8a0de/linux-set_random_windows_style_hostname_via_hostnamectl.sh /usr/bin/set_win10_style_hostname
 chmod +x /usr/bin/set_win10_style_hostname
 
-# clean up /tmp/cloned
-rm -rf /tmp/cloned
-
 # link htop to btop
-ln -s /usr/bin/btop /usr/bin/htop
+ln -sf /usr/bin/btop /usr/bin/htop
 
 # cleanup backgrounds dir
 rm -rfv /usr/share/backgrounds/*
 rm -rfv /usr/share/gnome-background-properties/*
 
 # remove default gnome extensions
-rm -rfv '/usr/share/gnome-shell/extensions/*'
+if [ -d "/usr/share/gnome-shell/extensions/bazaar-integration@kolunmi.github.io/" ]
+then
+  echo 'backing up bazaar-integration@kolunmi.github.io'
+  cp -r /usr/share/gnome-shell/extensions/bazaar-integration@kolunmi.github.io /tmp/cloned/
+  cp -r /tmp/cloned/bazaar-integration@kolunmi.github.io /usr/share/gnome-shell/extensions/bazaar-integration@kolunmi.github.io
+  rm -rfv '/usr/share/gnome-shell/extensions/*'
+else
+  rm -rfv '/usr/share/gnome-shell/extensions/*'
+fi
+# clean up /tmp/cloned
+rm -rf /tmp/cloned
