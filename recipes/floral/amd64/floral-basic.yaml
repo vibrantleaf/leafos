@@ -1,1 +1,89 @@
-
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
+name: floral
+description: 
+base-image: quay.io/almalinuxorg/atomic-desktop-gnome
+image-version: latest
+alt-tags:
+  - el
+platforms:
+    - linux/amd64
+modules:
+  - type: files
+    files:
+      - source: rootfs/floral/amd64/basic
+        destination: /
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - btop
+        - fish
+        - arc-theme
+        - papirus-icon-theme
+        - subscription-manager
+        - yggdrasil
+        - gnome-menus
+    remove:
+      auto-remove: true
+      packages:
+        - firefox
+        - htop
+  - type: script
+    scripts:
+      - "floral/amd64/basic/build.sh"
+  - type: copy
+    from: ghcr.io/ublue-os/bluefin:stable
+    src: /usr/share/backgrounds
+    dest: /usr/share/backgrounds
+  - type: copy
+    from: ghcr.io/ublue-os/bluefin:stable 
+    src: /usr/share/gnome-background-properties
+    dest: /usr/share/gnome-background-properties
+  - type: gschema-overrides
+    include:
+      - "floral_amd64_basic.gschema.override"
+  - type: gnome-extensions
+    install:
+      - 307 # Dash to Dock
+      - 615 # AppIndicator and KStatusNotifierItem Support
+      - 3193 # Blur my Shell
+      - 517 # Caffeine
+      - 7065 # Tiling Shell
+      - 779 # Clipboard Indicator
+      - 1319 # GSConnect
+      - 3628 # ArcMenu
+      - 4655 # Date Menu Formatter
+      - 8098 # Wellbeing Toggle
+      - 7048 # Rounded Window Corners Reborn
+      - 8261 # SimpleWeather
+      - 9983 # Touchshell
+  - type: systemd
+    system:
+      enabled:
+        - bootc-publish-rhsm-facts.service
+        - yggdrasil.service
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - OpenDyslexic
+      google-fonts:
+        - Roboto
+        - Open Sans
+        - Ubuntu
+      url-fonts:
+        - name: ComicMonoNF
+          url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Nerd.Font.Complete.ttf"
+        - name: ComicMonoBoldNF
+          url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Bold.Nerd.Font.Complete.Windows.Compatible.ttf"
+  - type: os-release
+    properties:
+      ID: leafos-floral
+      ID_LIKE: eu-os almalinux rhel centos fedora
+      NAME: LeafOS_Floral
+      PRETTY_NAME: LeafOS
+      HOME_URL: https://github.com/vibrantleaf/leafos/blob/main/README.md
+      VARIANT: Floral
+      VARIANT_ID: demo-almalinux
+  - type: initramfs
+  - type: signing

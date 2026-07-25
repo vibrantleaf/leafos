@@ -82,6 +82,8 @@ modules:
       CODENAME: "Shark"
   - type: fonts
     fonts:
+      nerd-fonts:
+        - OpenDyslexic
       google-fonts:
         - Roboto
         - Open Sans

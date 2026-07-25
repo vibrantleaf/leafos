@@ -77,6 +77,8 @@ modules:
       PRETTY_NAME: "LeafOS Workstation For ARM64, Codename: Sawfish"
   - type: fonts
     fonts:
+      nerd-fonts:
+        - OpenDyslexic
       google-fonts:
         - Roboto
         - Open Sans
