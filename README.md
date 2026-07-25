@@ -13,13 +13,15 @@ Hello, This repository is for building my own for fun custom personal operating 
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Floral | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-gecko.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-gecko.yaml) |
 | Gecko | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-gecko.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-gecko.yaml) |
-| Shark (The Premire LeafOS Image.) | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-shark.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-shark.yaml) |
+| Shark (The Premire LeafOS Images.) | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-shark.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-shark.yaml) |
 | Sawfish | [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/vibrantleaf/leafos/build-sawfish.yaml)](https://github.com/vibrantleaf/leafos/actions/workflows/.github/workflows/build-sawfish.yaml) |
 
 
 Checkout [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foot logo" width="11"/>  GNOME Apps](https://apps.gnome.org/en-GB/) for a curated list of Great Applications and [<img src="https://dl.flathub.org/assets/_next/public/favicon.png" alt="It's Flathub's logo" width="11"/>  Flathub](https://flathub.org/en-GB/) The App Store for Linux.
 
-## Changes from upstream.
+## Shark (The Premire LeafOS Images)
+
+### Changes from upstream.
 Here is the changes that I have made in this os image derived from bazzite with gnome.
 - Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> Microsoft](https://github.com/microsoft/)/[mimalloc](https://github.com/microsoft/mimalloc/)
   - Added: `ujust` script to enable and disable mimalloc globally via `LD_PRELOAD` in `/etc/environment`
@@ -163,6 +165,8 @@ The AI Free Code only applys to code for the customisations that I have made to 
 
 ## Special Thanks.
 - Thank you to the [<img src="https://fedoraproject.org/favicon.ico" alt="It's Fedora's F infitity logo" width="11"/> Fedora](https://fedoraproject.org/), [<img src="https://universal-blue.org/content/favicon-new.png" alt="It's Universal Blue's U Logo" width="11"/> Unversial Blue](https://universal-blue.org/),[<img src="https://blue-build.org/favicon.svg" alt="It's Blue Build's Duck Mascot" width="11"/> Blue Build](https://blue-build.org/) and the [<img src="https://www.cncf.io/wp-content/themes/cncf-twenty-two/images/favicon.svg" alt="Cloud Native Computing Foundation Logo" width="11"/> CNCF](https://www.cncf.io/) Teams for making custom personal operating system images possible.
+
+- Thank you to [<img src="https://almalinux.org/fav/favicon.ico" alt="It's Alms Linus's Flower logo" width="11"/> Alma Linux](https://almalinux.org/) And [<img src="https://eu-os.eu/assets/favicon.svg" alt="It's the EU OS logo" width="11"/> EU OS](https://eu-os.eu/) For the insparation to work on floral.
 
 - Thank you to the [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foot logo" width="11"/> GNOME](https://www.gnome.org/) Team for making a fantastic desktop environment.
 
