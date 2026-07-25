@@ -21,11 +21,10 @@ Here is the changes that I have made in this os image derived from bazzite with 
 - Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> Microsoft](https://github.com/microsoft/)/[mimalloc](https://github.com/microsoft/mimalloc/)
   - Added: `ujust` script to enable and disable mimalloc globally via `LD_PRELOAD` in `/etc/environment`
 - Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> Feral Interactive](https://github.com/FeralInteractive/)/[gamemode](https://github.com/FeralInteractive/gamemode)
-- Added: [<img src="https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" alt="The gitlab logo" width="11"/> vibrantleaf](https://gitlab.com/vibrantleaf/)/[systemd-curfew](https://gitlab.com/vibrantleaf/systemd-curfew)
 - ~~Added: Cloudflare Warp installed by default for [<img src="https://one.one.one.one/favicon.ico" alt="The Cloudflare one dot one dot one dot one logo" width="11"/> 1.1.1.1](https://one.one.one.one/)~~
 - Added (deck image only): [<img src="https://kodi.tv/images/kodi-logo-with-text.svg" alt="The Kodi logo" width="11"/> kodi](https://kodi.tv)
-- Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/>[vibrantleaf](github.com/vibrantleaf/)/[comic-mono-font-NF](https://github.com/vibrantleaf/comic-mono-font-NF)
-- Added: All Google [noto fonts](https://fonts.google.com/noto)
+- Added: [<img src="https://github.githubassets.com/favicons/favicon.png" alt="The github Logo" width="11"/> vibrantleaf](github.com/vibrantleaf/)/[comic-mono-font-NF](https://github.com/vibrantleaf/comic-mono-font-NF)
+- Added: All Google [<img src="https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/favicon.svg" alt="The Google Fonts Logo" width="11"/> noto fonts](https://fonts.google.com/noto)
 - Enabled: NTSYNC Kernel Module by default
 - Replaced: `htop` with `btop`, a more modern alternitive to `top`
 - Replaced: [<img src="https://bazzite.gg/favicon.ico" alt="It's Bazzite's B logo" width="11"/> Bazzite's](https://bazzite.gg/) default wallpapers with [<img src="https://projectbluefin.io/favicons/favicon.svg" alt="It's Bluefin's Dinosaur Logo" width="11"/> Bluefin's](https://projectbluefin.io/) default wallpapers
@@ -41,19 +40,19 @@ Here is the changes that I have made in this os image derived from bazzite with 
 The following is a list of the preinstalled GNOME Extensions and the appropriate ID number.
 | ID: | Name: |
 | --- |--- |
-| 307 | [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) |
-| 517 | [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) |
-| 615 |  [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) |
-| 779 | [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) |
-| 1319 | [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) |
-| 3193 | [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) |
-| 3628 | [ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) |
-| 4655 | [Date Menu Formatter](https://extensions.gnome.org/extension/4655/date-menu-formatter/) |
-| 7048 | [Rounded Window Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/) |
-| 7065 | [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) |
-| 8098 | [Wellbeing Toggle](https://extensions.gnome.org/extension/8098/wellbeing-toggle/) |
-| 8261 | [SimpleWeather](https://extensions.gnome.org/extension/8261/simpleweather/) |
-| 9983 | [Touchshell](https://extensions.gnome.org/extension/9983/touchshell/) |
+| 307 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_307_2.png" alt="Dash to Dock Logo" width="25"/> Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) |
+| 517 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_517.png" alt="Caffeine Logo" width="25"/> Caffeine](https://extensions.gnome.org/extension/517/caffeine/) |
+| 615 | [<img src="https://extensions.gnome.org/static/images/plugin.png" alt="AppIndicator and K Status Notifier Item Support Logo" width="32"/> AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) |
+| 779 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_779_cGrEoF7.png" alt="Clipboard Indicator Logo" width="32"/> Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/) |
+| 1319 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_1319_VlYFTP0.png" alt="G S Connect Logo" width="32"/> GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/) |
+| 3193 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_3193_QedHJZY.png" alt="Blur my Shell Logo" width="32"/> Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) |
+| 3628 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_3628_57rtk3m.png" alt="Arc Menu Logo" width="32"/> ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) |
+| 4655 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_4655.png" alt="Date Menu Formatter Logo" width="32"/> Date Menu Formatter](https://extensions.gnome.org/extension/4655/date-menu-formatter/) |
+| 7048 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_7048.png" alt="Rounded Window Corners Reborn Logo" width="32"/> Rounded Window Corners Reborn](https://extensions.gnome.org/extension/7048/rounded-window-corners-reborn/) |
+| 7065 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_7065.png" alt="Tiling Shell Logo" width="32"/> Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) |
+| 8098 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_8098.png" alt="Wellbeing Toggle Logo" width="32"/> Wellbeing Toggle](https://extensions.gnome.org/extension/8098/wellbeing-toggle/) |
+| 8261 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_8261.png" alt="Simple Weather Logo" width="32"/> SimpleWeather](https://extensions.gnome.org/extension/8261/simpleweather/) |
+| 9983 | [<img src="https://extensions.gnome.org/extension-data/icons/icon_9983.png" alt="Touchshell Logo" width="32"/> Touchshell](https://extensions.gnome.org/extension/9983/touchshell/) |
 
 ## Installation Guide.
 >Unfortunately due to the size of the `.iso` installers they cannot be provided.
