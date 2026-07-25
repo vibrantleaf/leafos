@@ -1,5 +1,5 @@
 # LeafOS
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="It's Tux, Linux's Penguin Mascot" width="75"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="It's Tux, Linux's Penguin Mascot" width="75"/> [*](https://github.com/vibrantleaf/leafos/edit/main/README.md#special-thanks)
 
 Hello, This repository is for building my own for fun custom personal operating system.
 
@@ -162,3 +162,6 @@ The AI Free Code only applys to code for the customisations that I have made to 
 Thank you to the [<img src="https://fedoraproject.org/favicon.ico" alt="It's Fedora's F infitity logo" width="11"/> Fedora](https://fedoraproject.org/), [<img src="https://universal-blue.org/content/favicon-new.png" alt="It's Universal Blue's U Logo" width="11"/> Unversial Blue](https://universal-blue.org/) and the [<img src="https://blue-build.org/favicon.svg" alt="It's Blue Build's Duck Mascot" width="11"/> Blue Build](https://blue-build.org/) Teams for making custom personal operating system images possible.
 
 Thank you to the [<img src="https://www.gnome.org/img/favicon.png" alt="It's Gnome's foot logo" width="11"/> GNOME](https://www.gnome.org/) Team for making a fantastic desktop environment.
+
+Thank you to Larry Ewing for creating the 'tux' linux mascott drawn using [GIMP](https://www.gimp.org/) in 1996.
+
