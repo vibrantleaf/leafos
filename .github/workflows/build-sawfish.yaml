@@ -52,7 +52,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - sawfish/sawfish-basic.yaml
+          - sawfish/arm64/sawfish-basic.yaml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.12

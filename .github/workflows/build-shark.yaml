@@ -52,10 +52,10 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - shark/shark-basic.yaml
-          - shark/shark-deck.yaml
-          - shark/shark-nvidia.yaml
-          - shark/shark-nvidia-open.yaml
+          - shark/amd64/shark-basic.yaml
+          - shark/amd64/shark-deck.yaml
+          - shark/amd64/shark-nvidia.yaml
+          - shark/amd64/shark-nvidia-open.yaml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.12
