@@ -1,0 +1,8 @@
+will be derived from eu-os base demo on almalinux 10:
+https://gitlab.com/eu-os/workspace-images/eu-os-base-demo/-/blob/main/recipes/almalinux-10.yml
+
+upstream image will be:
+almalinux 10.x atomic destop gnome 
+docker://quay.io/almalinuxorg/atomic-desktop-gnome:latest
+
+https://almalinux.org/
