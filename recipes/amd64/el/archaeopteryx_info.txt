@@ -4,5 +4,3 @@ https://gitlab.com/eu-os/workspace-images/eu-os-base-demo/-/blob/main/recipes/al
 upstream image will be:
 almalinux 10.x atomic destop gnome 
 docker://quay.io/almalinuxorg/atomic-desktop-gnome:latest
-
-https://almalinux.org/
