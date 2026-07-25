@@ -1,8 +1,8 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
 name: floral
-description: 
-base-image: quay.io/almalinuxorg/atomic-desktop-gnome
+description: experimental almalinux based LeafOS
+base-image: "quay.io/almalinuxorg/atomic-desktop-gnome"
 image-version: latest
 alt-tags:
   - el
