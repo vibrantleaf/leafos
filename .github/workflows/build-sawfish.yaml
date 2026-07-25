@@ -30,10 +30,10 @@ on:
       #- "files/rootfs/sawfish/*"
       - "files/rootfs/gecko/*"
       - "files/rootfs/floral/*"
-      - "files/gschema-overrides/shark/*"
-      #- "files/gschema-overrides/sawfish/*"
-      - "files/gschema-overrides/gecko/*"
-      - "files/gschema-overrides/floral/*"
+      - "files/gschema-overrides/shark*"
+      #- "files/gschema-overrides/sawfish*"
+      - "files/gschema-overrides/gecko*"
+      - "files/gschema-overrides/floral*"
       - "extra/*"
   pull_request:
   workflow_dispatch:
