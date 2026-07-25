@@ -19,8 +19,8 @@ modules:
       packages:
         - btop
         - fish
-        - arc-theme
-        - papirus-icon-theme
+        #- arc-theme
+        #- papirus-icon-theme
         - subscription-manager
         - yggdrasil
         - gnome-menus
