@@ -53,7 +53,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - "shark/amd64/nvidia/shark.gschema.override"
+      - "shark_amd64_nvidia.gschema.override"
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock

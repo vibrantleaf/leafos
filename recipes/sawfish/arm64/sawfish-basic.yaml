@@ -54,7 +54,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - "sawfish/arm64/basic/sawfish.gschema.override"
+      - "sawfish_arm64_basic.gschema.override"
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock
