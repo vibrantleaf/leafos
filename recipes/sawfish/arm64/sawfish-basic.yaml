@@ -41,7 +41,7 @@ modules:
   - type: script
     scripts:
       - "sawfish/arm64/basic/build.sh"
-      #- "sawfish/basic/box64.sh"
+      #- "sawfish/arm64/basic/box64.sh"
     snippets:
       - "rm /usr/sysctl.d/ntsync.conf"
   - type: copy
@@ -54,7 +54,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - sawfish/arm64/basic/sawfish.gschema.override
+      - "sawfish/arm64/basic/sawfish.gschema.override"
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock

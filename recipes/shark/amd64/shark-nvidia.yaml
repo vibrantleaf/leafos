@@ -42,7 +42,7 @@ modules:
         - nautilus-gsconnect
   - type: script
     scripts:
-      - "shark/nvidia/amd64/build.sh"
+      - "shark/amd64/nvidia/build.sh"
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
@@ -53,7 +53,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - shark/nvidia/amd64/shark.gschema.override
+      - "shark/amd64/nvidia/shark.gschema.override"
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock
