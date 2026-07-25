@@ -1,0 +1,66 @@
+name: build floral
+on:
+  schedule:
+    - cron:
+        "00 06 * * *" # build at 06:00 UTC every day
+        # (20 minutes after last ublue images start building)
+  push:
+    paths-ignore:
+      - "**.md"
+      - "**.txt"
+      - "**.gitattributes"
+      - "**.gitignore"
+      - ".gitlab/*"
+      - ".github/dependabot.yaml"
+      - ".github/CODEOWNERS"
+      #- ".github/workflows/floral"
+      - ".github/workflows/gecko"
+      - ".github/workflows/sawfish"
+      - ".github/workflows/shark"
+      - ".devcontainer/*"
+      - "recipes/shark/*"
+      - "recipes/sawfish/*"
+      #- "recipes/floral/*"
+      - "recipes/gecko/*"
+      - "files/scripts/shark/*"
+      - "files/scripts/sawfish/*"
+      - "files/scripts/gecko/*"
+      #- "files/scripts/floral/*"
+      - "files/rootfs/shark/*"
+      - "files/rootfs/sawfish/*"
+      - "files/rootfs/gecko/*"
+      #- "files/rootfs/floral/*"
+      - "files/gschema-overrides/shark/*"
+      - "files/gschema-overrides/sawfish/*"
+      - "files/gschema-overrides/gecko/*"
+      #- "files/gschema-overrides/floral/*"
+      - "extra/*"
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  bluebuild:
+    name: Build Custom Image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    strategy:
+      fail-fast: false
+      matrix:
+        recipe:
+          - floral/floral.yaml
+    steps:
+      - name: Build Custom Image
+        uses: blue-build/github-action@v1.12
+        with:
+          recipe: ${{ matrix.recipe }}
+          cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          registry_token: ${{ github.token }}
+          pr_event_number: ${{ github.event.number }}
+          maximize_build_space: true
+          #squash: true
+          #rechunk: true

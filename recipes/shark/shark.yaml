@@ -1,0 +1,98 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
+name: leafos
+description: My Custom Build of Universal Blue's Bazzite Image
+base-image: ghcr.io/ublue-os/bazzite-gnome
+image-version: stable
+alt-tags:
+  - stable
+  - amd64-stable
+platforms:
+  - linux/amd64
+modules:
+  - type: files
+    files:
+      - source: rootfs/shark/basic
+        destination: /
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - mimalloc
+        - gamemode
+        - mangohud
+        - git
+        - btop
+        - arc-theme
+        - papirus-icon-theme
+        - gnome-menus
+        - nushell
+        - fish
+        - google-noto-fonts-all
+    remove:
+      auto-remove: true
+      packages:
+        - firefox
+        - htop
+        - gnome-shell-extension-gsconnect
+        - gnome-shell-extension-user-theme
+        - rom-properties-gtk4
+        - rom-properties-localsearch3
+        - steamdeck-gnome-presets
+        - steamdeck-backgrounds
+        - nautilus-gsconnect
+  - type: script
+    scripts:
+      - "shark/basic/build.sh"
+  - type: copy
+    from: ghcr.io/ublue-os/bluefin:stable
+    src: /usr/share/backgrounds
+    dest: /usr/share/backgrounds
+  - type: copy
+    from: ghcr.io/ublue-os/bluefin:stable 
+    src: /usr/share/gnome-background-properties
+    dest: /usr/share/gnome-background-properties
+  - type: gschema-overrides
+    include:
+      - shark/basic/shark.gschema.override
+  - type: gnome-extensions
+    install:
+      - 307 # Dash to Dock
+      - 615 # AppIndicator and KStatusNotifierItem Support
+      - 3193 # Blur my Shell
+      - 517 # Caffeine
+      - 7065 # Tiling Shell
+      - 779 # Clipboard Indicator
+      - 1319 # GSConnect
+      - 3628 # ArcMenu
+      - 4655 # Date Menu Formatter
+      - 8098 # Wellbeing Toggle
+      - 7048 # Rounded Window Corners Reborn
+      - 8261 # SimpleWeather
+      - 9983 # Touchshell
+  - type: os-release
+    properties:
+      ID: leafos_workstation
+      NAME: LeafOSWorkstation
+      PRETTY_NAME: "LeafOS Workstation"
+      CODENAME: "Shark"
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Roboto
+        - Open Sans
+        - Ubuntu
+      url-fonts:
+        - name: ComicMonoNF
+          url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Nerd.Font.Complete.ttf"
+        - name: ComicMonoBoldNF
+          url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Bold.Nerd.Font.Complete.Windows.Compatible.ttf"
+  - type: kargs
+    arch: x86_64
+    kargs:
+      - mitigations=on
+      - systemd.unified_cgroup_hierarchy=0
+      - panic=30
+      - vm.dirty_writeback_centisecs=6000
+  - type: initramfs
+  - type: signing
