@@ -12,7 +12,7 @@ platforms:
 modules:
   - type: files
     files:
-      - source: rootfs/shark/nvidia-open
+      - source: rootfs/shark/amd64/nvidia-open
         destination: /
   - type: dnf
     install:
@@ -42,7 +42,7 @@ modules:
         - nautilus-gsconnect
   - type: script
     scripts:
-      - "shark/nvidia-open/build.sh"
+      - "shark/amd64/nvidia-open/build.sh"
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
@@ -53,7 +53,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - shark/nvidia-open/shark.gschema.override
+      - shark/amd64/nvidia-open/shark.gschema.override
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock
@@ -73,7 +73,7 @@ modules:
     properties:
       ID: leafos_workstation
       NAME: LeafOSWorkstation
-      PRETTY_NAME: "LeafOS Workstation"
+      PRETTY_NAME: "LeafOS Workstation, Codename: Shark"
       CODENAME: "Shark"
   - type: fonts
     fonts:

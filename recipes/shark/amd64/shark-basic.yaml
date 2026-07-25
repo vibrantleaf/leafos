@@ -1,8 +1,8 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
-name: leafos-nvidia
+name: leafos
 description: My Custom Build of Universal Blue's Bazzite Image
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
+base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: stable
 alt-tags:
   - stable
@@ -12,10 +12,11 @@ platforms:
 modules:
   - type: files
     files:
-      - source: rootfs/shark/nvidia
+      - source: rootfs/shark/amd64/basic
         destination: /
   - type: dnf
     install:
+      install-weak-deps: false
       packages:
         - mimalloc
         - gamemode
@@ -42,7 +43,7 @@ modules:
         - nautilus-gsconnect
   - type: script
     scripts:
-      - "shark/nvidia/build.sh"
+      - "shark/amd64/basic/build.sh"
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
@@ -53,7 +54,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - shark/nvidia/shark.gschema.override
+      - shark/amd64/basic/shark.gschema.override
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock
@@ -73,7 +74,7 @@ modules:
     properties:
       ID: leafos_workstation
       NAME: LeafOSWorkstation
-      PRETTY_NAME: "LeafOS Workstation"
+      PRETTY_NAME: "LeafOS Workstation, Codename: Shark"
       CODENAME: "Shark"
   - type: fonts
     fonts:

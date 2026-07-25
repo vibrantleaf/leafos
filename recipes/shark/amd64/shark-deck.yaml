@@ -12,7 +12,7 @@ platforms:
 modules:
   - type: files
     files:
-      - source: rootfs/shark/deck
+      - source: rootfs/shark/amd64/deck
         destination: /
   - type: dnf
     install:
@@ -42,12 +42,12 @@ modules:
         - nautilus-gsconnect
   - type: script
     scripts:
-      - "amd64/build.sh"
+      - "shark/amd64/deck/build.sh"
     snippets:
       - "dnf install --refresh --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree -y kodi"
   - type: script
     scripts:
-      - "shark/deck/build.sh"
+      - "shark/amd64/deck/build.sh"
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
@@ -58,7 +58,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - shark/deck/shark.gschema.override
+      - shark/amd64/deck/shark.gschema.override
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock
@@ -78,7 +78,7 @@ modules:
     properties:
       ID: leafos_deck
       NAME: LeafOSDeck
-      PRETTY_NAME: "LeafOS Deck"
+      PRETTY_NAME: "LeafOS Deck, Codename: Shark"
       CODENAME: "Shark"
   - type: fonts
     fonts:

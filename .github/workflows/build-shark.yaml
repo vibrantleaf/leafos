@@ -52,7 +52,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - shark/shark.yaml
+          - shark/shark-basic.yaml
           - shark/shark-deck.yaml
           - shark/shark-nvidia.yaml
           - shark/shark-nvidia-open.yaml

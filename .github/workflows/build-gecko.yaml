@@ -52,7 +52,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - gecko/gecko.yaml
+          - gecko/gecko-basic.yaml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.12

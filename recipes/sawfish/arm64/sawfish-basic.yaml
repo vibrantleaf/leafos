@@ -1,30 +1,34 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
-name: leafos
-description: My Custom Build of Universal Blue's Bazzite Image
-base-image: ghcr.io/ublue-os/bazzite-gnome
-image-version: stable
+name: sawfish
+description: My Custom Build of Universal Blue's Bluefin LTS Image
+base-image: ghcr.io/ublue-os/bluefin
+image-version: lts-hwe
 alt-tags:
   - stable
-  - amd64-stable
+  - lts
+  - lts-hwe
+  - lts-hwe-stable
+  - arm64-stable
+  - arm64-lts
+  - arm64-lts-hwe
+  - arm64-lts-hwe-stable
 platforms:
-  - linux/amd64
+  - linux/arm64
 modules:
   - type: files
     files:
-      - source: rootfs/shark/basic
+      - source: sawfish/arm64/basic
         destination: /
   - type: dnf
     install:
-      install-weak-deps: false
       packages:
         - mimalloc
-        - gamemode
-        - mangohud
         - git
         - btop
         - arc-theme
         - papirus-icon-theme
+        - gtk2 # needed: for steam on arm64 support
         - gnome-menus
         - nushell
         - fish
@@ -34,16 +38,12 @@ modules:
       packages:
         - firefox
         - htop
-        - gnome-shell-extension-gsconnect
-        - gnome-shell-extension-user-theme
-        - rom-properties-gtk4
-        - rom-properties-localsearch3
-        - steamdeck-gnome-presets
-        - steamdeck-backgrounds
-        - nautilus-gsconnect
   - type: script
     scripts:
-      - "shark/basic/build.sh"
+      - "sawfish/arm64/basic/build.sh"
+      #- "sawfish/basic/box64.sh"
+    snippets:
+      - "rm /usr/sysctl.d/ntsync.conf"
   - type: copy
     from: ghcr.io/ublue-os/bluefin:stable
     src: /usr/share/backgrounds
@@ -54,7 +54,7 @@ modules:
     dest: /usr/share/gnome-background-properties
   - type: gschema-overrides
     include:
-      - shark/basic/shark.gschema.override
+      - sawfish/arm64/basic/sawfish.gschema.override
   - type: gnome-extensions
     install:
       - 307 # Dash to Dock
@@ -72,10 +72,9 @@ modules:
       - 9983 # Touchshell
   - type: os-release
     properties:
-      ID: leafos_workstation
-      NAME: LeafOSWorkstation
-      PRETTY_NAME: "LeafOS Workstation"
-      CODENAME: "Shark"
+      ID: sawfish
+      NAME: Sawfish
+      PRETTY_NAME: "LeafOS Workstation For ARM64, Codename: Sawfish"
   - type: fonts
     fonts:
       google-fonts:
@@ -88,7 +87,7 @@ modules:
         - name: ComicMonoBoldNF
           url: "https://github.com/vibrantleaf/comic-mono-font-NF/releases/download/2022-12-3/Comic.Mono.Bold.Nerd.Font.Complete.Windows.Compatible.ttf"
   - type: kargs
-    arch: x86_64
+    arch: aarch64
     kargs:
       - mitigations=on
       - systemd.unified_cgroup_hierarchy=0
