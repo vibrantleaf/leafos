@@ -16,9 +16,6 @@ on:
       - "extra/arm64"
   pull_request:
   workflow_dispatch:
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
-  cancel-in-progress: true
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
