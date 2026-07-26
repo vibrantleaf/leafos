@@ -1,0 +1,24 @@
+ ---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
+name: gecko
+description: experimental OpenSUSE based LeafOS
+base-image: "ghcr.io/vibrantleaf/opensuse-bootc"
+image-version: latest
+alt-tags:
+  - tumbleweed
+platforms:
+  - linux/amd64
+modules:
+  - type: files
+    files:
+      - source: rootfs/gecko/amd64/basic
+        destination: /
+  - type: zypper
+    install:
+      packages:
+         - git
+    remove:
+      packages:
+         - firefox
+         - firefox-langpacks
+  - type: signing
