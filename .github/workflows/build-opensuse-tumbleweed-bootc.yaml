@@ -1,0 +1,49 @@
+name: Build OpenSUSE Tumbleweed bootc container
+on:
+  schedule:
+    - cron:
+        "00 05 * * *"
+  push:
+    paths-ignore:
+      - "**.md"
+      - "**.txt"
+      - "**.gitattributes"
+      - "**.gitignore"
+      - ".gitlab"
+      - ".github/"
+      - ".devcontainer"
+      - "recipes"
+      - "extra/arm64"
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Buildah
+        uses: redhat-actions/buildah-build@v2
+        with:
+          image: ${{ env.IMAGE_NAME }}
+          tags: |
+            latest
+            ${{ github.sha }}
+          build-args: |
+            APP_VERSION=${{ github.ref_name }}
+          containerfiles: |
+            ./extra/amd64/bootcrew-mono/opensuse/Containerfile
+      - name: Push to GHCR
+        uses: redhat-actions/push-to-registry@v2
+        with:
+          image: ${{ opensuse-bootc }}
+          tags: latest ${{ github.sha }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
