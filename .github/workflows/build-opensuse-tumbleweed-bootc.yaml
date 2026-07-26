@@ -1,4 +1,4 @@
-name: Build OpenSUSE Tumbleweed bootc container
+name: Build OpenSUSE-bootc container
 on:
   schedule:
     - cron:
