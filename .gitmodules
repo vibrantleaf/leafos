@@ -1,0 +1,3 @@
+[submodule "bootcrew-mono"]
+	path = /extra/amd64/bootcrew-mono
+	url = https://github.com/vibrantleaf/bootcrew-mono.git
