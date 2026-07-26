@@ -13,12 +13,23 @@ modules:
     files:
       - source: rootfs/gecko/amd64/basic
         destination: /
+  - type: script
+    snippets:
+      - zypper install -t pattern gnome -y
+      - zypper install -y gdm
   - type: zypper
     install:
       packages:
          - git
+         - podman
+         - bash
+         - fish
     remove:
       packages:
          - firefox
          - firefox-langpacks
+  - type: systemd
+    system:
+      enabled:
+        - gdm
   - type: signing
