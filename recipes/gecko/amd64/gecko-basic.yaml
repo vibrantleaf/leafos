@@ -15,12 +15,12 @@ modules:
   - type: script
     snippets:
       ## add packman repo
-      - "zypper --non-interactive addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/' packman"
-      - "zypper --non-interactive refresh"
-      - "zypper --non-interactive dist-upgrade --from packman --allow-vendor-change"
+      #- "zypper --non-interactive addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/' packman"
+      #- "zypper --non-interactive refresh"
+      #- "zypper --non-interactive dist-upgrade --from packman --allow-vendor-change"
 
-      # add media codecs
-      - "zypper --non-interactive install --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
+      ## add media codecs
+      #- "zypper --non-interactive install --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
       
       # add gnome
       - "zypper --non-interactive install -t pattern gnome"
