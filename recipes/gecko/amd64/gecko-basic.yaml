@@ -15,34 +15,28 @@ modules:
   - type: script
     snippets:
       ## add packman repo
-      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Essentials/' packman-essentials"
-      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Extra/' packman-extra"
-      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Games/' packman-games"
-      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Multimedia/' packman-multimedia"
-      #- "zypper refresh"
-      #- "zypper dist-upgrade -y --from packman-essentials --allow-vendor-change"
-      #- "zypper dist-upgrade -y --from packman-extra --allow-vendor-change"
-      #- "zypper dist-upgrade -y --from packman-games --allow-vendor-change"
-      #- "zypper dist-upgrade -y --from packman-multimedia --allow-vendor-change"
+      - "zypper --non-interactive addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/' packman"
+      - "zypper --non-interactive refresh"
+      - "zypper --non-interactive dist-upgrade --from packman --allow-vendor-change"
 
-      ## add media codecs
-      #- "zypper install -y --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
+      # add media codecs
+      - "zypper --non-interactive install --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
       
       # add gnome
-      - "zypper install -t pattern gnome -y"
-      - "zypper install -y gdm"
+      - "zypper --non-interactive install -t pattern gnome"
+      - "zypper --non-interactive install gdm"
       
       # add oci essentals
-      - "zypper install -y podman crun distrobox"
+      - "zypper --non-interactive install podman crun distrobox"
       
       # add shell essentals
-      - "zypper install -y bash fish dash dash-sh just"
+      - "zypper --non-interactive install bash fish dash dash-sh just"
       
       # add flatpak
-      - "zypper install -y flatpak flatpak-remote-flathub"
+      - "zypper --non-interactive install flatpak flatpak-remote-flathub"
 
       # remove unwanted packages
-      - "zypper remove -y firefox firefox-langpacks yast2"
+      - "zypper --non-interactive remove firefox firefox-langpacks yast2"
   - type: script
     snippets:
       - "/bin/bash -c '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)'"
