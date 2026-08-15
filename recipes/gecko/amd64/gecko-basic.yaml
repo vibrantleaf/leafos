@@ -30,6 +30,7 @@ modules:
       - "zypper --non-interactive install podman crun distrobox"
       
       # add shell essentals
+      - "zypper --non-interactive remove bash-sh"
       - "zypper --non-interactive install bash fish dash dash-sh just"
       
       # add flatpak
