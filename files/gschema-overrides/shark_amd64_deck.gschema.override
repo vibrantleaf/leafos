@@ -45,6 +45,8 @@ natural-scroll=true
 send-events='disabled-on-external-mouse'
 edge-scrolling-enabled=true
 disable-while-typing=true
+accel-profile='adaptive'
+middle-click-emulation=true
 
 [org.gnome.desktop.peripherals.touchpad:GNOME-Greeter]
 tap-to-click=true
@@ -52,6 +54,7 @@ tap-to-click=true
 [org.gnome.desktop.peripherals.mouse]
 natural-scroll=true
 middle-click-emulation=false
+accel-profile='flat'
 
 [org.gnome.nautilus.preferences]
 recursive-search='local-only'
