@@ -14,13 +14,19 @@ modules:
         destination: /
   - type: script
     snippets:
-      # add packman repo
-      - "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/' packman"
-      - "zypper refresh"
-      - "zypper dist-upgrade -y --from packman --allow-vendor-change"
-      
-      # add media codecs
-      - "zypper install -y --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
+      ## add packman repo
+      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Essentials/' packman-essentials"
+      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Extra/' packman-extra"
+      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Games/' packman-games"
+      #- "yes a | zypper addrepo -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Multimedia/' packman-multimedia"
+      #- "zypper refresh"
+      #- "zypper dist-upgrade -y --from packman-essentials --allow-vendor-change"
+      #- "zypper dist-upgrade -y --from packman-extra --allow-vendor-change"
+      #- "zypper dist-upgrade -y --from packman-games --allow-vendor-change"
+      #- "zypper dist-upgrade -y --from packman-multimedia --allow-vendor-change"
+
+      ## add media codecs
+      #- "zypper install -y --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
       
       # add gnome
       - "zypper install -t pattern gnome -y"
@@ -35,7 +41,6 @@ modules:
       # add flatpak
       - "zypper install -y flatpak flatpak-remote-flathub"
 
-      #
       # remove unwanted packages
       - "zypper remove -y firefox firefox-langpacks yast2"
   - type: script
