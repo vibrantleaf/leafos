@@ -1,4 +1,3 @@
- ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
 name: gecko
 description: experimental OpenSUSE based LeafOS
@@ -15,19 +14,33 @@ modules:
         destination: /
   - type: script
     snippets:
-      - zypper install -t pattern gnome -y
-      - zypper install -y gdm
-  - type: zypper
-    install:
-      packages:
-         - git
-         - podman
-         - bash
-         - fish
-    remove:
-      packages:
-         - firefox
-         - firefox-langpacks
+      # add packman repo
+      - "zypper addrepo -y -cfp 90 'https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/' packman"
+      - "zypper refresh"
+      - "zypper dist-upgrade -y --from packman --allow-vendor-change"
+      
+      # add media codecs
+      - "zypper install -y --from packman ffmpeg gstreamer-plugins-{good,bad,ugly,libav} libavcodec vlc-codecs"
+      
+      # add gnome
+      - "zypper install -t pattern gnome -y"
+      - "zypper install -y gdm"
+      
+      # add oci essentals
+      - "zypper install -y podman crun distrobox"
+      
+      # add shell essentals
+      - "zypper install -y bash fish dash dash-sh just"
+      
+      # add flatpak
+      - "zypper install -y flatpak flatpak-remote-flathub"
+
+      #
+      # remove unwanted packages
+      - "zypper remove -y firefox firefox-langpacks yast2"
+  - type: script
+    snippets:
+      - "/bin/bash -c '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)'"
   - type: systemd
     system:
       enabled:
