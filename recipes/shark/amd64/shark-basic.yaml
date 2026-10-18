@@ -2,7 +2,8 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
 name: leafos
 description: My Custom Build of Universal Blue's Bazzite Image
-base-image: ghcr.io/ublue-os/bazzite-gnome
+base-image: ghcr.io/ultramarine-linux/gnome-bootc:latest-standard
+#base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: stable
 alt-tags:
   - stable
@@ -16,17 +17,16 @@ modules:
         destination: /
   - type: script
     snippets:
-      - "dnf update -y --best --allowerasing"
+      - "dnf update -y"
   - type: dnf
     install:
       install-weak-deps: false
+      skip-broken: true
       packages:
         - mimalloc
         - gamemode
         - git
         - btop
-        - arc-theme
-        - papirus-icon-theme
         - gnome-menus
         - nushell
         - fish
@@ -64,8 +64,6 @@ modules:
       - 3193 # Blur my Shell
       - 517 # Caffeine
       - 7065 # Tiling Shell
-      - 779 # Clipboard Indicator
-      - 1319 # GSConnect
       - 3628 # ArcMenu
       - 4655 # Date Menu Formatter
       - 8098 # Wellbeing Toggle
