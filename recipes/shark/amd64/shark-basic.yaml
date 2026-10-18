@@ -2,9 +2,9 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v2.json
 name: leafos
 description: My Custom Build of Universal Blue's Bazzite Image
-base-image: ghcr.io/ultramarine-linux/gnome-bootc:latest-standard
+base-image: ghcr.io/ultramarine-linux/gnome-bootc
 #base-image: ghcr.io/ublue-os/bazzite-gnome
-image-version: stable
+image-version: latest-standard
 alt-tags:
   - stable
   - amd64-stable
